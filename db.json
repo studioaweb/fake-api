@@ -149,5 +149,11 @@
         }
       ]
     }
+  ],
+  "ads_mega_banner": [
+    {
+      "id": 1,
+      "src": "https://ads.xstreaming.com.br?_dnid=15&t=1706907361"  
+    }
   ]
 }
