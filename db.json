@@ -1,52 +1,40 @@
 {
   "get_order_home": [
     {
-      "id": "",
-      "endpoint": "highlight_large"
+      "endpoint": "highlight_large/"
     },
     {
-      "id": 1,
-      "endpoint": "channels"
+      "endpoint": "channels/1"
     },
     {
-      "id": 1,
-      "endpoint": "ads_mega_banner"
+      "endpoint": "ads_mega_banner/1"
     },
     {
-      "id": "",
-      "endpoint": "live_now"
+      "endpoint": "live_now/"
     },
     {
-      "id": "",
-      "endpoint": "highlight_medium"
+      "endpoint": "highlight_medium/"
     },
     {
-      "id": "",
-      "endpoint": "store"
+      "endpoint": "store/"
     },
     {
-      "id": 1,
-      "endpoint": "series"
+      "endpoint": "series/1"
     },
     {
-      "id": 1,
-      "endpoint": "playlist"
+      "endpoint": "playlist/1"
     },
     {
-      "id": 1,
-      "endpoint": "ads_medium_banner"
+      "endpoint": "ads_medium_banner/1"
     },
     {
-      "id": "",
-      "endpoint": "upcoming_events"
+      "endpoint": "upcoming_events/"
     },
     {
-      "id": "",
-      "endpoint": "celebrities"
+      "endpoint": "celebrities/"
     },
     {
-      "id": 2,
-      "endpoint": "ads_medium_banner"
+      "endpoint": "ads_medium_banner/2"
     }
   ],
   "highlight_large": [
