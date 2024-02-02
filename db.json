@@ -1,47 +1,114 @@
 {
   "get_order_home": [
     {
+      "id": "",
       "endpoint": "highlight_large"
     },
     {
-      "endpoint": "channels",
-      "id": "PBR"
+      "id": 1,
+      "endpoint": "channels"
     },
     {
-      "endpoint": "ads_mega_banner",
-      "id": "xxx"
+      "id": 1,
+      "endpoint": "ads_mega_banner"
     },
     {
+      "id": "",
       "endpoint": "live_now"
     },
     {
+      "id": "",
       "endpoint": "highlight_medium"
     },
     {
+      "id": "",
       "endpoint": "store"
     },
     {
-      "endpoint": "series",
-      "id":
-      "xxx"
+      "id": 1,
+      "endpoint": "series"
     },
     {
-      "endpoint": "playlist",
-      "id": "xxx"
+      "id": 1,
+      "endpoint": "playlist"
     },
     {
-      "endpoint": "ads_medium_banner",
-      "_dnid": "xxx"
+      "id": 1,
+      "endpoint": "ads_medium_banner"
     },
     {
+      "id": "",
       "endpoint": "upcoming_events"
     },
     {
+      "id": "",
       "endpoint": "celebrities"
     },
     {
-      "endpoint": "ads_medium_banner", 
-      "_dnid": "xxx"
+      "id": 2,
+      "endpoint": "ads_medium_banner"
+    }
+  ],
+  "highlight_large": [
+    {
+      "id": 1,
+      "title": "PBR RIDGE RIDER",
+      "short_description": "Acompanhe a maior competição do rodeio ao vivo.",
+      "is_live": true,
+      "is_purchased": false,
+      "watch": false,
+      "subscribe": false,
+      "text_button_primary": "COMPRAR",
+      "text_button_secondary": "VER DESCRIÇÃO COMPLETA",
+      "full_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a tortor nunc. Praesent cursus suscipit nulla et volutpat. Donec pretium enim in purus ultrices, a vehicula nisi mollis.",
+      "date_time": "15/03 | 18:00",
+      "media": {
+        "trailer": "http://.../xxx.m3u8",
+        "thumbs": {
+          "app": "http://.../xxx.webp",
+          "web": "http://.../xxx.webp"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "title": "PBR UTB 23/24 | Chicago, IL | Round 2",
+      "short_description": "Acompanhe a maior competição do rodeio ao vivo.",
+      "is_live": false,
+      "is_purchased": false,
+      "watch": false,
+      "subscribe": true,
+      "text_button_primary": "ASSINAR",
+      "text_button_secondary": "VER DESCRIÇÃO COMPLETA",
+      "full_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a tortor nunc. Praesent cursus suscipit nulla et volutpat. Donec pretium enim in purus ultrices, a vehicula nisi mollis.",
+      "date_time": "15/03 | 18:00",
+      "media": {
+        "trailer": "http://.../xxx.m3u8",
+        "thumbs": {
+          "app": "http://.../xxx.webp",
+          "web": "http://.../xxx.webp"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "title": "TEAM SERIES CHEYENNE",
+      "short_description": "Acompanhe a maior competição do rodeio ao vivo.",
+      "is_live": false,
+      "is_purchased": true,
+      "watch": true,
+      "subscribe": false,
+      "text_button_primary": "ASSINAR",
+      "text_button_secondary": "VER DESCRIÇÃO COMPLETA",
+      "full_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a tortor nunc. Praesent cursus suscipit nulla et volutpat. Donec pretium enim in purus ultrices, a vehicula nisi mollis.",
+      "date_time": "15/03 | 18:00",
+      "media": {
+        "trailer": "http://.../xxx.m3u8",
+        "thumbs": {
+          "app": "http://.../xxx.webp",
+          "web": "http://.../xxx.webp"
+        }
+      }
     }
   ]
 }
