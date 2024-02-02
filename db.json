@@ -1,11 +1,47 @@
 {
-  "posts": [
+  "get_order_home": [
     {
-      "id": 1,
-      "title": "hello"
+      "endpoint": "highlight_large"
+    },
+    {
+      "endpoint": "channels",
+      "id": "PBR"
+    },
+    {
+      "endpoint": "ads_mega_banner",
+      "id": "xxx"
+    },
+    {
+      "endpoint": "live_now"
+    },
+    {
+      "endpoint": "highlight_medium"
+    },
+    {
+      "endpoint": "store"
+    },
+    {
+      "endpoint": "series",
+      "id":
+      "xxx"
+    },
+    {
+      "endpoint": "playlist",
+      "id": "xxx"
+    },
+    {
+      "endpoint": "ads_medium_banner",
+      "_dnid": "xxx"
+    },
+    {
+      "endpoint": "upcoming_events"
+    },
+    {
+      "endpoint": "celebrities"
+    },
+    {
+      "endpoint": "ads_medium_banner", 
+      "_dnid": "xxx"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
