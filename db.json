@@ -153,7 +153,81 @@
   "ads_mega_banner": [
     {
       "id": 1,
-      "src": "https://ads.xstreaming.com.br?_dnid=15&t=1706907361"  
+      "src": "https://ads.xstreaming.com.br?_dnid=15&t=1706907361"
+    }
+  ],
+  "live_now": [
+    {
+      "section": {
+        "title": "ao vivo agora",
+        "see_more": "Ver todos »"
+      },
+      "items": [
+        {
+          "id": 1,
+          "title": "MEGA RODEIO MARAU",
+          "time": "A partir das 18h",
+          "is_purchased": false,
+          "url_checkout": "https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538",
+          "watch": false,
+          "text_button": "COMPRAR",
+          "media": {
+            "logo": "https://studioaweb.com.br/xstreaming/fake-api/0_icons/icon_brtvmax_118x64_white.png",
+            "thumbs": {
+              "app": "https://studioaweb.com.br/xstreaming/fake-api/live_now_720x405_01.jpg",
+              "web": "https://studioaweb.com.br/xstreaming/fake-api/"
+            }
+          }
+        },
+        {
+          "id": 2,
+          "title": "COLORADO",
+          "time": "A partir das 18h",
+          "is_purchased": false,
+          "url_checkout": "https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538",
+          "watch": false,
+          "text_button": "ASSINAR",
+          "media": {
+            "logo": "https://studioaweb.com.br/xstreaming/fake-api/0_icons/icon_brtvmax_118x64_white.png",
+            "thumbs": {
+              "app": "https://studioaweb.com.br/xstreaming/fake-api/live_now_720x405_02.jpg",
+              "web": "https://studioaweb.com.br/xstreaming/fake-api/"
+            }
+          }
+        },
+        {
+          "id": 3,
+          "title": "CRP ARENA DREAMS",
+          "time": "A partir das 15h30",
+          "is_purchased": true,
+          "url_checkout": "https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538",
+          "watch": true,
+          "text_button": "ASSISTIR",
+          "media": {
+            "logo": "https://studioaweb.com.br/xstreaming/fake-api/0_icons/icon_youtube_118x64.png",
+            "thumbs": {
+              "app": "https://studioaweb.com.br/xstreaming/fake-api/live_now_720x405_03.jpg",
+              "web": "https://studioaweb.com.br/xstreaming/fake-api/"
+            }
+          }
+        },
+        {
+          "id": 4,
+          "title": "EXPOAQUI",
+          "time": "A partir das 15h30",
+          "is_purchased": true,
+          "url_checkout": "https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538",
+          "watch": true,
+          "text_button": "ASSISTIR",
+          "media": {
+            "logo": "https://studioaweb.com.br/xstreaming/fake-api/0_icons/icon_youtube_118x64.png",
+            "thumbs": {
+              "app": "https://studioaweb.com.br/xstreaming/fake-api/live_now_720x405_03.jpg",
+              "web": "https://studioaweb.com.br/xstreaming/fake-api/"
+            }
+          }
+        }
+      ]
     }
   ]
 }
