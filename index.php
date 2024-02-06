@@ -185,7 +185,7 @@ switch ($uri_segments[3]) {
         }";
       break;
     default:
-      echo "F";
+      echo "Aguardando endpoint";
   }
 
 ?>
