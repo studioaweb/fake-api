@@ -229,5 +229,66 @@
         }
       ]
     }
+  ],
+  "highlight_medium": [
+    {
+      "section": {
+        "title": "Destaques",
+        "see_more": "Ver todos »"
+      },
+      "items": [
+        {
+          "id": 1,
+          "title": "PBR RIDGE RIDER",
+          "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ejusmod tempor incidicunt ut labore et dolore magna aliqua.",
+          "is_purchased": false,
+          "watch": false,
+          "subscribe": true,
+          "text_button": "ASSINAR",
+          "date_time": "15/03 | 18:00",
+          "media": {
+            "trailer": "http://.../xxx.m3u8",
+            "thumbs": {
+              "app": "https://studioaweb.com.br/xstreaming/fake-api/highlight_large_1080x1920/highlight_medium_1080x1720_01.jpg",
+              "web": "https://studioaweb.com.br/xstreaming/fake-api/"
+            }
+          }
+        },
+        {
+          "id": 2,
+          "title": "TEAM SERIES CHEYENNE",
+          "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ejusmod tempor incidicunt ut labore et dolore magna aliqua.",
+          "is_purchased": false,
+          "watch": false,
+          "subscribe": false,
+          "text_button": "COMPRAR",
+          "date_time": "15/03 | 18:00",
+          "media": {
+            "trailer": "http://.../xxx.m3u8",
+            "thumbs": {
+              "app": "https://studioaweb.com.br/xstreaming/fake-api/highlight_large_1080x1920/highlight_medium_1080x1720_02.jpg",
+              "web": "https://studioaweb.com.br/xstreaming/fake-api/"
+            }
+          }
+        },
+        {
+          "id": 3,
+          "title": "PBR UTB 23/24 | Chicago, IL | Round 2",
+          "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ejusmod tempor incidicunt ut labore et dolore magna aliqua.",
+          "is_purchased": false,
+          "watch": false,
+          "subscribe": true,
+          "text_button": "ASSINAR",
+          "date_time": "15/03 | 18:00",
+          "media": {
+            "trailer": "http://.../xxx.m3u8",
+            "thumbs": {
+              "app": "https://studioaweb.com.br/xstreaming/fake-api/highlight_large_1080x1920/highlight_medium_1080x1720_03.jpg",
+              "web": "https://studioaweb.com.br/xstreaming/fake-api/"
+            }
+          }
+        }
+      ]
+    }
   ]
 }
