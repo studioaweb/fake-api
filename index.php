@@ -4,7 +4,7 @@ $uri_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $uri_segments = explode('/', $uri_path);
 
 //echo $uri_segments[0]; // for www.example.com/user/account you will get 'user'
-echo "<pre>";
+//echo "<pre>";
 
 //print_r($uri_segments);
 
@@ -67,8 +67,8 @@ switch ($uri_segments[3]) {
             'media': {
                 'trailer': 'http://.../xxx.m3u8',
                 'thumbs': {
-                    'app': 'https://studioaweb.com.br/xstreaming/fake-api/highlight_large_1080x1920/highlight_large_1080x1920_01.jpg',
-                    'web': 'https://studioaweb.com.br/xstreaming/fake-api/'
+                    'app': 'https://studioaweb.com.br/xstreaming/images/highlight_large_1080x1920/highlight_large_1080x1920_01.jpg',
+                    'web': 'https://studioaweb.com.br/xstreaming/images/'
                 }
             }
         }
@@ -88,8 +88,8 @@ switch ($uri_segments[3]) {
             'media': {
                 'trailer': 'http://.../xxx.m3u8',
                 'thumbs': {
-                    'app': 'https://studioaweb.com.br/xstreaming/fake-api/highlight_large_1080x1920/highlight_large_1080x1920_02.jpg',
-                    'web': 'https://studioaweb.com.br/xstreaming/fake-api/'
+                    'app': 'https://studioaweb.com.br/xstreaming/images/highlight_large_1080x1920/highlight_large_1080x1920_02.jpg',
+                    'web': 'https://studioaweb.com.br/xstreaming/images/'
                 }
             }
         },
@@ -108,8 +108,8 @@ switch ($uri_segments[3]) {
             'media': {
                 'trailer': 'http://.../xxx.m3u8',
                 'thumbs': {
-                    'app': 'https://studioaweb.com.br/xstreaming/fake-api/highlight_large_1080x1920/highlight_large_1080x1920_03.jpg',
-                    'web': 'https://studioaweb.com.br/xstreaming/fake-api/'
+                    'app': 'https://studioaweb.com.br/xstreaming/images/highlight_large_1080x1920/highlight_large_1080x1920_03.jpg',
+                    'web': 'https://studioaweb.com.br/xstreaming/images/'
                 }
             }
         }
@@ -130,8 +130,8 @@ switch ($uri_segments[3]) {
                     'title': 'FESTA DE COLORADO',
                     'media': {
                         'thumbs': {
-                            'app': 'https://studioaweb.com.br/xstreaming/fake-api/channels_405x720/channels_405_720_01.jpg',
-                            'web': 'https://studioaweb.com.br/xstreaming/fake-api/'
+                            'app': 'https://studioaweb.com.br/xstreaming/images/channels_405x720/channels_405_720_01.jpg',
+                            'web': 'https://studioaweb.com.br/xstreaming/images/'
                         }
                     }
                 },
@@ -140,7 +140,7 @@ switch ($uri_segments[3]) {
                     'title': '30 ANOS DE BARRETOS',
                     'media': {
                         'thumbs': {
-                            'app': 'https://studioaweb.com.br/xstreaming/fake-api/channels_405x720/channels_405_720_02.jpg',
+                            'app': 'https://studioaweb.com.br/xstreaming/images/channels_405x720/channels_405_720_02.jpg',
                             'web': 'http://.../yyy.webp'
                         }
                     }
@@ -150,7 +150,7 @@ switch ($uri_segments[3]) {
                     'title': 'EXPO LONDRINA',
                     'media': {
                         'thumbs': {
-                            'app': 'https://studioaweb.com.br/xstreaming/fake-api/channels_405x720/channels_405_720_03.jpg',
+                            'app': 'https://studioaweb.com.br/xstreaming/images/channels_405x720/channels_405_720_03.jpg',
                             'web': 'http://.../yyy.webp'
                         }
                     }
@@ -160,7 +160,7 @@ switch ($uri_segments[3]) {
                     'title': 'COLORADO + FINAIS',
                     'media': {
                         'thumbs': {
-                            'app': 'https://studioaweb.com.br/xstreaming/fake-api/channels_405x720/channels_405_720_04.jpg',
+                            'app': 'https://studioaweb.com.br/xstreaming/images/channels_405x720/channels_405_720_04.jpg',
                             'web': 'http://.../yyy.webp'
                         }
                     }
