@@ -548,9 +548,6 @@ switch ($uri_segments[3]) {
 
         $main_section['items'][2]['items'] = array($s3_item1, $s3_item2, $s3_item3, $s3_item4);
 
-        // echo '<pre>';
-        // print_r($main_section);
-        // die();
 
         echo str_replace("\/", "/", json_encode($main_section, JSON_UNESCAPED_UNICODE));
         break;
