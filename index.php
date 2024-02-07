@@ -619,14 +619,14 @@ switch ($uri_segments[3]) {
         if ($uri_segments[4] == 1) {
             $banner = array(
                 'id' => 1,
-                'src' => 'https://studioaweb.com.br/xstreaming/images/ads_medium_banner_1080x720/ads_medium_banner_1080x1080_01.jpg'
+                'src' => 'https://ads.xstreaming.com.br/?_dnid=46&t=1707340941'
             );
             echo str_replace("\/", "/", json_encode($banner, JSON_UNESCAPED_UNICODE));
         }
         if ($uri_segments[4] == 2) {
             $banner = array(
                 'id' => 1,
-                'src' => 'https://studioaweb.com.br/xstreaming/images/ads_medium_banner_1080x720/ads_medium_banner_1080x1080_02.jpg'
+                'src' => 'https://ads.xstreaming.com.br/?_dnid=50&t=1707341210'
             );
             echo str_replace("\/", "/", json_encode($banner, JSON_UNESCAPED_UNICODE));
         }
