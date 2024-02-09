@@ -61,7 +61,7 @@ function show_home($uri_segments)
           'trailer' => 'http://.../xxx.m3u8',
           'thumbs' => array(
             'app' => IMAGES_URL . 'highlight_large_1080x1920/highlight_large_1080x1920_01.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -82,7 +82,7 @@ function show_home($uri_segments)
           'trailer' => 'http://.../xxx.m3u8',
           'thumbs' => array(
             'app' => IMAGES_URL . 'highlight_large_1080x1920/highlight_large_1080x1920_02.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -103,7 +103,7 @@ function show_home($uri_segments)
           'trailer' => 'http://.../xxx.m3u8',
           'thumbs' => array(
             'app' => IMAGES_URL . 'highlight_large_1080x1920/highlight_large_1080x1920_03.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -124,7 +124,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'channels_405x720/channels_405_720_01.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -135,7 +135,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'channels_405x720/channels_405_720_02.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -146,7 +146,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'channels_405x720/channels_405_720_03.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -157,7 +157,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'channels_405x720/channels_405_720_04.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -194,7 +194,7 @@ function show_home($uri_segments)
           'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
           'thumbs' => array(
             'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_01.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -211,7 +211,7 @@ function show_home($uri_segments)
           'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
           'thumbs' => array(
             'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_02.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -228,7 +228,7 @@ function show_home($uri_segments)
           'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
           'thumbs' => array(
             'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_03.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -245,7 +245,7 @@ function show_home($uri_segments)
           'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
           'thumbs' => array(
             'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_04.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -274,7 +274,7 @@ function show_home($uri_segments)
           'trailer' => 'http://.../xxx.m3u8',
           'thumbs' => array(
             'app' => IMAGES_URL . 'highlight_medium_1080x1720/highlight_medium_1080x1720_01.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -292,7 +292,7 @@ function show_home($uri_segments)
           'trailer' => 'http://.../xxx.m3u8',
           'thumbs' => array(
             'app' => IMAGES_URL . 'highlight_medium_1080x1720/highlight_medium_1080x1720_02.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -310,7 +310,7 @@ function show_home($uri_segments)
           'trailer' => 'http://.../xxx.m3u8',
           'thumbs' => array(
             'app' => IMAGES_URL . 'highlight_medium_1080x1720/highlight_medium_1080x1720_03.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -334,7 +334,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'store_720x720/store_720x720_01.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -346,7 +346,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'store_720x720/store_720x720_02.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -358,7 +358,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'store_720x720/store_720x720_03.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -370,7 +370,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'store_720x720/store_720x720_04.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -422,7 +422,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_01.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -435,7 +435,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_02.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -448,7 +448,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_03.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -461,7 +461,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_04.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -476,7 +476,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_05.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -489,7 +489,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_06.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -502,7 +502,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_07.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -515,7 +515,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_08.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -530,7 +530,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_09.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -543,7 +543,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_10.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -556,7 +556,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_11.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -569,7 +569,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_12.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -594,7 +594,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'playlists_405x720/playlists_405x720_01.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -605,7 +605,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'playlists_405x720/playlists_405x720_02.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -616,7 +616,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'playlists_405x720/playlists_405x720_03.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -627,7 +627,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'playlists_405x720/playlists_405x720_04.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -638,7 +638,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'playlists_405x720/playlists_405x720_05.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -658,7 +658,7 @@ function show_home($uri_segments)
       }
       if ($uri_segments[5] == 2) {
         $banner = array(
-          'id' => 1,
+          'id' => 2,
           'src' => 'https://ads.xstreaming.com.br/?_dnid=50&t=1707341210'
         );
         echo str_replace("\/", "/", json_encode($banner, JSON_UNESCAPED_UNICODE));
@@ -680,7 +680,7 @@ function show_home($uri_segments)
           'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
           'thumbs' => array(
             'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_01.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -691,7 +691,7 @@ function show_home($uri_segments)
           'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
           'thumbs' => array(
             'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_02.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -702,7 +702,7 @@ function show_home($uri_segments)
           'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
           'thumbs' => array(
             'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_03.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -713,7 +713,7 @@ function show_home($uri_segments)
           'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
           'thumbs' => array(
             'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_04.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -724,7 +724,7 @@ function show_home($uri_segments)
           'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
           'thumbs' => array(
             'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_05.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -735,7 +735,7 @@ function show_home($uri_segments)
           'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
           'thumbs' => array(
             'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_06.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -761,7 +761,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'celebrities_720x720/celebrities_720x720_01.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -773,7 +773,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'celebrities_720x720/celebrities_720x720_02.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -785,7 +785,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'celebrities_720x720/celebrities_720x720_03.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -797,7 +797,7 @@ function show_home($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'celebrities_720x720/celebrities_720x720_04.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -845,7 +845,7 @@ function show_upcoming_events($uri_segments)
           'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
           'thumbs' => array(
             'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_01.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -862,7 +862,7 @@ function show_upcoming_events($uri_segments)
           'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
           'thumbs' => array(
             'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_02.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -879,7 +879,7 @@ function show_upcoming_events($uri_segments)
           'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
           'thumbs' => array(
             'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_03.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -896,7 +896,7 @@ function show_upcoming_events($uri_segments)
           'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
           'thumbs' => array(
             'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_04.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -937,7 +937,7 @@ function show_upcoming_events($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_01.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -953,7 +953,7 @@ function show_upcoming_events($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_01.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -969,7 +969,7 @@ function show_upcoming_events($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_01.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -985,7 +985,7 @@ function show_upcoming_events($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_01.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -1011,6 +1011,9 @@ function show_channels($uri_segments)
         ['endpoint' => 'channels/1/live_now/'],
         ['endpoint' => 'channels/1/store/'],
         ['endpoint' => 'channels/1/playlist/1'],
+        ['endpoint' => 'channels/1/ads_medium_banner/1'],
+        ['endpoint' => 'channels/1/series/1'],
+        ['endpoint' => 'channels/1/playlist/2'],
       );
       echo str_replace("\/", "/", json_encode($endpoints, JSON_UNESCAPED_UNICODE));
       break;
@@ -1035,7 +1038,7 @@ function show_channels($uri_segments)
           'trailer' => 'http://.../xxx.m3u8',
           'thumbs' => array(
             'app' => IMAGES_URL . 'highlight_medium_1080x1720/highlight_medium_1080x1720_01.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -1053,7 +1056,7 @@ function show_channels($uri_segments)
           'trailer' => 'http://.../xxx.m3u8',
           'thumbs' => array(
             'app' => IMAGES_URL . 'highlight_medium_1080x1720/highlight_medium_1080x1720_02.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -1071,7 +1074,7 @@ function show_channels($uri_segments)
           'trailer' => 'http://.../xxx.m3u8',
           'thumbs' => array(
             'app' => IMAGES_URL . 'highlight_medium_1080x1720/highlight_medium_1080x1720_03.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -1100,7 +1103,7 @@ function show_channels($uri_segments)
           'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
           'thumbs' => array(
             'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_01.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -1117,7 +1120,7 @@ function show_channels($uri_segments)
           'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
           'thumbs' => array(
             'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_02.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -1134,7 +1137,7 @@ function show_channels($uri_segments)
           'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
           'thumbs' => array(
             'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_03.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -1151,7 +1154,7 @@ function show_channels($uri_segments)
           'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
           'thumbs' => array(
             'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_04.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -1176,7 +1179,7 @@ function show_channels($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'store_720x720/store_720x720_01.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -1188,7 +1191,7 @@ function show_channels($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'store_720x720/store_720x720_02.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -1200,7 +1203,7 @@ function show_channels($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'store_720x720/store_720x720_03.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -1212,7 +1215,7 @@ function show_channels($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'store_720x720/store_720x720_04.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -1226,8 +1229,8 @@ function show_channels($uri_segments)
     case "playlist":
       $full_object = array(
         'section' => array(
-          'id' => 1,
-          'title' => 'Prova dos 3 Tambores'
+          'id' => ($uri_segments[6]) ? $uri_segments[6] : 1,
+          'title' => ($uri_segments[6] == 1) ? 'Prova dos 3 Tambores' : 'Colorado dia 1'
         )
       );
       $item1 = array(
@@ -1237,7 +1240,7 @@ function show_channels($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'playlists_720x405/playlists_720x405_01.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -1248,7 +1251,7 @@ function show_channels($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'playlists_720x405/playlists_720x405_02.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -1259,7 +1262,7 @@ function show_channels($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'playlists_720x405/playlists_720x405_03.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -1270,7 +1273,7 @@ function show_channels($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'playlists_720x405/playlists_720x405_04.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -1281,7 +1284,7 @@ function show_channels($uri_segments)
         'media' => array(
           'thumbs' => array(
             'app' => IMAGES_URL . 'playlists_720x405/playlists_720x405_05.jpg',
-            'web' => IMAGES_URL 
+            'web' => IMAGES_URL
           )
         )
       );
@@ -1291,6 +1294,222 @@ function show_channels($uri_segments)
       echo str_replace("\/", "/", json_encode($full_object, JSON_UNESCAPED_UNICODE));
       break;
 
+    case "ads_medium_banner":
+      if ($uri_segments[6] == 1) {
+        $banner = array(
+          'id' => 1,
+          'src' => 'https://ads.xstreaming.com.br/?_dnid=46&t=1707340941'
+        );
+        echo str_replace("\/", "/", json_encode($banner, JSON_UNESCAPED_UNICODE));
+      }
+      if ($uri_segments[6] == 2) {
+        $banner = array(
+          'id' => 2,
+          'src' => 'https://ads.xstreaming.com.br/?_dnid=50&t=1707341210'
+        );
+        echo str_replace("\/", "/", json_encode($banner, JSON_UNESCAPED_UNICODE));
+      }
+      break;
+    
+    case "series":
+      $main_section = array(
+        'id' => 1,
+        'section' => array(
+          'title' => 'SUPER PACOTE BARRETÃO',
+          'short_description' => 'Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+          'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
+          'is_purchased' => false,
+          'watch' => false,
+          'subscribe' => false,
+          'text_button_primary' => 'COMPRAR',
+          'text_button_secondary' => 'VER DESCRIÇÃO COMPLETA',
+          'full_description' => 'Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+          'title_box' => 'Todos os episódios',
+          'media' => array(
+            'background' => BASE_URL . 'images/series_background_1080x1882/series_background_1080x1882.jpg'
+          )
+        )
+      );
+      $main_section['items'] = array(
+        array(
+          'id' => 1,
+          'title' => 'Temporada 2021'
+        ),
+        array(
+          'id' => 2,
+          'title' => 'Temporada 2022'
+        ),
+        array(
+          'id' => 3,
+          'title' => 'Temporada 2023'
+        )
+      );
+
+      $s1_item1 = array(
+        'id' => 1,
+        'title' => 'Transmissão 1',
+        'short_description' => 'Prova do laço',
+        'duration' => '45 minutos',
+        'media' => array(
+          'thumbs' => array(
+            'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_01.jpg',
+            'web' => IMAGES_URL
+          )
+        )
+      );
+
+      $s1_item2 = array(
+        'id' => 2,
+        'title' => 'Transmissão 2',
+        'short_description' => 'Prova dos Tambores',
+        'duration' => '45 minutos',
+        'media' => array(
+          'thumbs' => array(
+            'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_02.jpg',
+            'web' => IMAGES_URL
+          )
+        )
+      );
+
+      $s1_item3 = array(
+        'id' => 3,
+        'title' => 'Transmissão 3',
+        'short_description' => 'Rodeio em Touros',
+        'duration' => '45 minutos',
+        'media' => array(
+          'thumbs' => array(
+            'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_03.jpg',
+            'web' => IMAGES_URL
+          )
+        )
+      );
+
+      $s1_item4 = array(
+        'id' => 4,
+        'title' => 'Transmissão 4',
+        'short_description' => 'Rodeio em Cavalos',
+        'duration' => '45 minutos',
+        'media' => array(
+          'thumbs' => array(
+            'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_04.jpg',
+            'web' => IMAGES_URL
+          )
+        )
+      );
+
+      $main_section['items'][0]['items'] = array($s1_item1, $s1_item2, $s1_item3, $s1_item4);
+
+      $s2_item1 = array(
+        'id' => 1,
+        'title' => 'Transmissão 1',
+        'short_description' => 'Prova do laço',
+        'duration' => '45 minutos',
+        'media' => array(
+          'thumbs' => array(
+            'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_05.jpg',
+            'web' => IMAGES_URL
+          )
+        )
+      );
+
+      $s2_item2 = array(
+        'id' => 2,
+        'title' => 'Transmissão 2',
+        'short_description' => 'Prova dos Tambores',
+        'duration' => '45 minutos',
+        'media' => array(
+          'thumbs' => array(
+            'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_06.jpg',
+            'web' => IMAGES_URL
+          )
+        )
+      );
+
+      $s2_item3 = array(
+        'id' => 3,
+        'title' => 'Transmissão 3',
+        'short_description' => 'Rodeio em Touros',
+        'duration' => '45 minutos',
+        'media' => array(
+          'thumbs' => array(
+            'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_07.jpg',
+            'web' => IMAGES_URL
+          )
+        )
+      );
+
+      $s2_item4 = array(
+        'id' => 4,
+        'title' => 'Transmissão 4',
+        'short_description' => 'Rodeio em Cavalos',
+        'duration' => '45 minutos',
+        'media' => array(
+          'thumbs' => array(
+            'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_08.jpg',
+            'web' => IMAGES_URL
+          )
+        )
+      );
+
+      $main_section['items'][1]['items'] = array($s2_item1, $s2_item2, $s2_item3, $s2_item4);
+
+      $s3_item1 = array(
+        'id' => 1,
+        'title' => 'Transmissão 1',
+        'short_description' => 'Prova do laço',
+        'duration' => '45 minutos',
+        'media' => array(
+          'thumbs' => array(
+            'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_09.jpg',
+            'web' => IMAGES_URL
+          )
+        )
+      );
+
+      $s3_item2 = array(
+        'id' => 2,
+        'title' => 'Transmissão 2',
+        'short_description' => 'Prova dos Tambores',
+        'duration' => '45 minutos',
+        'media' => array(
+          'thumbs' => array(
+            'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_10.jpg',
+            'web' => IMAGES_URL
+          )
+        )
+      );
+
+      $s3_item3 = array(
+        'id' => 3,
+        'title' => 'Transmissão 3',
+        'short_description' => 'Rodeio em Touros',
+        'duration' => '45 minutos',
+        'media' => array(
+          'thumbs' => array(
+            'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_11.jpg',
+            'web' => IMAGES_URL
+          )
+        )
+      );
+
+      $s3_item4 = array(
+        'id' => 4,
+        'title' => 'Transmissão 4',
+        'short_description' => 'Rodeio em Cavalos',
+        'duration' => '45 minutos',
+        'media' => array(
+          'thumbs' => array(
+            'app' => IMAGES_URL . 'series_thumbs_480x480/series_thumbs_480x480_12.jpg',
+            'web' => IMAGES_URL
+          )
+        )
+      );
+
+      $main_section['items'][2]['items'] = array($s3_item1, $s3_item2, $s3_item3, $s3_item4);
+
+
+      echo str_replace("\/", "/", json_encode($main_section, JSON_UNESCAPED_UNICODE));
+      break;
 
 
 
