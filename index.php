@@ -820,7 +820,7 @@ function show_upcoming_events($uri_segments)
     case "get_endpoints":
       $endpoints = array(
         ['endpoint' => 'upcoming_events/live_now/'],
-        ['endpoint' => 'upcoming_events/upcoming_events/']
+        ['endpoint' => 'upcoming_events/calendar/']
       );
       echo str_replace("\/", "/", json_encode($endpoints, JSON_UNESCAPED_UNICODE));
       break;
