@@ -2,8 +2,9 @@
 
 $uri_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $uri_segments = explode('/', $uri_path);
-$base_url = $base_url . 'https://studioaweb.com.br/xstreaming/fake-api/';
-$url_home = $base_url . 'home/';
+$base_url = 'https://studioaweb.com.br/xstreaming/fake-api/';
+
+define('BASE_URL', $base_url);
 
 switch ($uri_segments[3]) {
   case "home":
@@ -11,6 +12,9 @@ switch ($uri_segments[3]) {
     break;
   case "upcoming_events":
     show_upcoming_events($uri_segments);
+    break;
+  case "channels":
+    show_channels($uri_segments);
     break;
 }
 
@@ -21,18 +25,18 @@ function show_home($uri_segments)
 
     case "get_endpoints":
       $endpoints = array(
-        ['endpoint' => 'highlight_large/'],
-        ['endpoint' => 'channels/pbr'],
-        ['endpoint' => 'ads_mega_banner/1'],
-        ['endpoint' => 'live_now/'],
-        ['endpoint' => 'highlight_medium/'],
-        ['endpoint' => 'store/'],
-        ['endpoint' => 'series/1'],
-        ['endpoint' => 'playlist/1'],
-        ['endpoint' => 'ads_medium_banner/1'],
-        ['endpoint' => 'upcoming_events/'],
-        ['endpoint' => 'celebrities/'],
-        ['endpoint' => 'ads_medium_banner/2']
+        ['endpoint' => 'home/highlight_large/'],
+        ['endpoint' => 'home/channels/pbr'],
+        ['endpoint' => 'home/ads_mega_banner/1'],
+        ['endpoint' => 'home/live_now/'],
+        ['endpoint' => 'home/highlight_medium/'],
+        ['endpoint' => 'home/store/'],
+        ['endpoint' => 'home/series/1'],
+        ['endpoint' => 'home/playlist/1'],
+        ['endpoint' => 'home/ads_medium_banner/1'],
+        ['endpoint' => 'home/upcoming_events/'],
+        ['endpoint' => 'home/celebrities/'],
+        ['endpoint' => 'home/ads_medium_banner/2']
       );
       echo str_replace("\/", "/", json_encode($endpoints, JSON_UNESCAPED_UNICODE));
       break;
@@ -54,8 +58,8 @@ function show_home($uri_segments)
         'media' => array(
           'trailer' => 'http://.../xxx.m3u8',
           'thumbs' => array(
-            'app' => $base_url . 'images/highlight_large_1080x1920/highlight_large_1080x1920_01.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/highlight_large_1080x1920/highlight_large_1080x1920_01.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -75,8 +79,8 @@ function show_home($uri_segments)
         'media' => array(
           'trailer' => 'http://.../xxx.m3u8',
           'thumbs' => array(
-            'app' => $base_url . 'fake-api/highlight_large_1080x1920/highlight_large_1080x1920_02.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'fake-api/highlight_large_1080x1920/highlight_large_1080x1920_02.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -86,7 +90,7 @@ function show_home($uri_segments)
         'short_description' => 'Acompanhe a maior competição do rodeio ao vivo.',
         'is_live' => false,
         'is_purchased' => true,
-        'url_checkout' => $base_url . 'fake-api/vide/1/get_endpoints',
+        'url_checkout' => BASE_URL . 'fake-api/vide/1/get_endpoints',
         'watch' => true,
         'subscribe' => false,
         'text_button_primary' => 'ASSINAR',
@@ -96,8 +100,8 @@ function show_home($uri_segments)
         'media' => array(
           'trailer' => 'http://.../xxx.m3u8',
           'thumbs' => array(
-            'app' => $base_url . 'fake-api/highlight_large_1080x1920/highlight_large_1080x1920_03.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'fake-api/highlight_large_1080x1920/highlight_large_1080x1920_03.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -114,44 +118,44 @@ function show_home($uri_segments)
       $item1 = array(
         'id' => 1,
         'title' => 'FESTA DE COLORADO',
-        'url' => $base_url . 'channels/1/get_endpoints',
+        'url' => BASE_URL . 'channels/1/get_endpoints',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/channels_405x720/channels_405_720_01.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/channels_405x720/channels_405_720_01.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
       $item2 = array(
         'id' => 2,
         'title' => '30 ANOS DE BARRETOS',
-        'url' => $base_url . 'channels/2/get_endpoints',
+        'url' => BASE_URL . 'channels/2/get_endpoints',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/channels_405x720/channels_405_720_02.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/channels_405x720/channels_405_720_02.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
       $item3 = array(
         'id' => 3,
         'title' => 'EXPO LONDRINA',
-        'url' => $base_url . 'channels/3/get_endpoints',
+        'url' => BASE_URL . 'channels/3/get_endpoints',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/channels_405x720/channels_405_720_03.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/channels_405x720/channels_405_720_03.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
       $item4 = array(
         'id' => 4,
         'title' => 'COLORADO + FINAIS',
-        'url' => $base_url . 'channels/4/get_endpoints',
+        'url' => BASE_URL . 'channels/4/get_endpoints',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/channels_405x720/channels_405_720_04.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/channels_405x720/channels_405_720_04.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -172,7 +176,7 @@ function show_home($uri_segments)
         'section' => array(
           'title' => 'ao vivo agora',
           'see_more' => 'Ver todos »',
-          'url' => $base_url . 'live_now/get_endpoints'
+          'url' => BASE_URL . 'live_now/get_endpoints'
         )
       );
       $item1 = array(
@@ -185,10 +189,10 @@ function show_home($uri_segments)
         'subscribe' => false,
         'text_button' => 'COMPRAR',
         'media' => array(
-          'logo' => $base_url . 'images/0_icons/icon_brtvmax_118x64_white.png',
+          'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
           'thumbs' => array(
-            'app' => $base_url . 'images/live_now_720x405/live_now_720x405_01.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/live_now_720x405/live_now_720x405_01.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -202,10 +206,10 @@ function show_home($uri_segments)
         'subscribe' => true,
         'text_button' => 'ASSINAR',
         'media' => array(
-          'logo' => $base_url . 'images/0_icons/icon_brtvmax_118x64_white.png',
+          'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
           'thumbs' => array(
-            'app' => $base_url . 'images/live_now_720x405/live_now_720x405_02.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/live_now_720x405/live_now_720x405_02.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -214,15 +218,15 @@ function show_home($uri_segments)
         'title' => 'CRP ARENA DREAMS',
         'time' => 'A partir das 15h30',
         'is_purchased' => true,
-        'url_checkout' => $base_url . 'live_now/1/get_endpoints',
+        'url_checkout' => BASE_URL . 'live_now/1/get_endpoints',
         'watch' => true,
         'subscribe' => false,
         'text_button' => 'ASSISTIR',
         'media' => array(
-          'logo' => $base_url . 'images/0_icons/icon_youtube_118x64.png',
+          'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
           'thumbs' => array(
-            'app' => $base_url . 'images/live_now_720x405/live_now_720x405_03.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/live_now_720x405/live_now_720x405_03.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -231,15 +235,15 @@ function show_home($uri_segments)
         'title' => 'EXPOAQUI',
         'time' => 'A partir das 15h30',
         'is_purchased' => true,
-        'url_checkout' => $base_url . 'live_now/2/get_endpoints',
+        'url_checkout' => BASE_URL . 'live_now/2/get_endpoints',
         'watch' => true,
         'subscribe' => false,
         'text_button' => 'ASSISTIR',
         'media' => array(
-          'logo' => $base_url . 'images/0_icons/icon_youtube_118x64.png',
+          'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
           'thumbs' => array(
-            'app' => $base_url . 'images/live_now_720x405/live_now_720x405_04.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/live_now_720x405/live_now_720x405_04.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -267,8 +271,8 @@ function show_home($uri_segments)
         'media' => array(
           'trailer' => 'http://.../xxx.m3u8',
           'thumbs' => array(
-            'app' => $base_url . 'images/highlight_medium_1080x1720/highlight_medium_1080x1720_01.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/highlight_medium_1080x1720/highlight_medium_1080x1720_01.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -285,8 +289,8 @@ function show_home($uri_segments)
         'media' => array(
           'trailer' => 'http://.../xxx.m3u8',
           'thumbs' => array(
-            'app' => $base_url . 'images/highlight_medium_1080x1720/highlight_medium_1080x1720_02.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/highlight_medium_1080x1720/highlight_medium_1080x1720_02.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -303,8 +307,8 @@ function show_home($uri_segments)
         'media' => array(
           'trailer' => 'http://.../xxx.m3u8',
           'thumbs' => array(
-            'app' => $base_url . 'images/highlight_medium_1080x1720/highlight_medium_1080x1720_03.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/highlight_medium_1080x1720/highlight_medium_1080x1720_03.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -327,8 +331,8 @@ function show_home($uri_segments)
         'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/store_720x720/store_720x720_01.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/store_720x720/store_720x720_01.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -339,8 +343,8 @@ function show_home($uri_segments)
         'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/store_720x720/store_720x720_02.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/store_720x720/store_720x720_02.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -351,8 +355,8 @@ function show_home($uri_segments)
         'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/store_720x720/store_720x720_03.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/store_720x720/store_720x720_03.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -363,8 +367,8 @@ function show_home($uri_segments)
         'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/store_720x720/store_720x720_04.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/store_720x720/store_720x720_04.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -389,7 +393,7 @@ function show_home($uri_segments)
           'full_description' => 'Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
           'title_box' => 'Todos os episódios',
           'media' => array(
-            'background' => $base_url . 'images/series_background_1080x1882/series_background_1080x1882.jpg'
+            'background' => BASE_URL . 'images/series_background_1080x1882/series_background_1080x1882.jpg'
           )
         )
       );
@@ -415,8 +419,8 @@ function show_home($uri_segments)
         'duration' => '45 minutos',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/series_thumbs_480x480/series_thumbs_480x480_01.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/series_thumbs_480x480/series_thumbs_480x480_01.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -428,8 +432,8 @@ function show_home($uri_segments)
         'duration' => '45 minutos',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/series_thumbs_480x480/series_thumbs_480x480_02.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/series_thumbs_480x480/series_thumbs_480x480_02.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -441,8 +445,8 @@ function show_home($uri_segments)
         'duration' => '45 minutos',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/series_thumbs_480x480/series_thumbs_480x480_03.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/series_thumbs_480x480/series_thumbs_480x480_03.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -454,8 +458,8 @@ function show_home($uri_segments)
         'duration' => '45 minutos',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/series_thumbs_480x480/series_thumbs_480x480_04.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/series_thumbs_480x480/series_thumbs_480x480_04.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -469,8 +473,8 @@ function show_home($uri_segments)
         'duration' => '45 minutos',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/series_thumbs_480x480/series_thumbs_480x480_05.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/series_thumbs_480x480/series_thumbs_480x480_05.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -482,8 +486,8 @@ function show_home($uri_segments)
         'duration' => '45 minutos',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/series_thumbs_480x480/series_thumbs_480x480_06.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/series_thumbs_480x480/series_thumbs_480x480_06.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -495,8 +499,8 @@ function show_home($uri_segments)
         'duration' => '45 minutos',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/series_thumbs_480x480/series_thumbs_480x480_07.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/series_thumbs_480x480/series_thumbs_480x480_07.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -508,8 +512,8 @@ function show_home($uri_segments)
         'duration' => '45 minutos',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/series_thumbs_480x480/series_thumbs_480x480_08.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/series_thumbs_480x480/series_thumbs_480x480_08.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -523,8 +527,8 @@ function show_home($uri_segments)
         'duration' => '45 minutos',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/series_thumbs_480x480/series_thumbs_480x480_09.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/series_thumbs_480x480/series_thumbs_480x480_09.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -536,8 +540,8 @@ function show_home($uri_segments)
         'duration' => '45 minutos',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/series_thumbs_480x480/series_thumbs_480x480_10.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/series_thumbs_480x480/series_thumbs_480x480_10.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -549,8 +553,8 @@ function show_home($uri_segments)
         'duration' => '45 minutos',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/series_thumbs_480x480/series_thumbs_480x480_11.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/series_thumbs_480x480/series_thumbs_480x480_11.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -562,8 +566,8 @@ function show_home($uri_segments)
         'duration' => '45 minutos',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/series_thumbs_480x480/series_thumbs_480x480_12.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/series_thumbs_480x480/series_thumbs_480x480_12.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -584,55 +588,55 @@ function show_home($uri_segments)
       $item1 = array(
         'id' => 1,
         'title' => 'CHAYENNE • PBR',
-        'url' => $base_url . 'video/1/get_endpoints',
+        'url' => BASE_URL . 'video/1/get_endpoints',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/playlists_405x720/playslists_405x720_01.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/playlists_405x720/playslists_405x720_01.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
       $item2 = array(
         'id' => 2,
         'title' => 'OUTLAW • PBR',
-        'url' => $base_url . 'video/2/get_endpoints',
+        'url' => BASE_URL . 'video/2/get_endpoints',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/playlists_405x720/playslists_405x720_02.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/playlists_405x720/playslists_405x720_02.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
       $item3 = array(
         'id' => 3,
         'title' => 'STAMPEDE • PBR',
-        'url' => $base_url . 'video/3/get_endpoints',
+        'url' => BASE_URL . 'video/3/get_endpoints',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/playlists_405x720/playslists_405x720_03.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/playlists_405x720/playslists_405x720_03.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
       $item4 = array(
         'id' => 4,
         'title' => 'GAMBLER DAYS • PBR',
-        'url' => $base_url . 'video/4/get_endpoints',
+        'url' => BASE_URL . 'video/4/get_endpoints',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/playlists_405x720/playslists_405x720_04.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/playlists_405x720/playslists_405x720_04.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
       $item5 = array(
         'id' => 5,
         'title' => 'RIDGE RIDER • PBR',
-        'url' => $base_url . 'video/5/get_endpoints',
+        'url' => BASE_URL . 'video/5/get_endpoints',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/playlists_405x720/playslists_405x720_05.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/playlists_405x720/playslists_405x720_05.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -664,17 +668,17 @@ function show_home($uri_segments)
         'section' => array(
           'title' => 'Próximos Eventos',
           'see_more' => 'Ver todos »',
-          'url' => $base_url . 'upcoming_events/get_endpoints'
+          'url' => BASE_URL . 'upcoming_events/get_endpoints'
         )
       );
       $item1 = array(
         'id' => 1,
         'date_time' => '15/03',
         'media' => array(
-          'logo' => $base_url . 'images/0_icons/icon_brtvmax_118x64_white.png',
+          'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
           'thumbs' => array(
-            'app' => $base_url . 'images/upcoming_events_405x720/upcoming_events_405x720_01.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/upcoming_events_405x720/upcoming_events_405x720_01.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -682,10 +686,10 @@ function show_home($uri_segments)
         'id' => 2,
         'date_time' => '19/05',
         'media' => array(
-          'logo' => $base_url . 'images/0_icons/icon_brtvmax_118x64_white.png',
+          'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
           'thumbs' => array(
-            'app' => $base_url . 'images/upcoming_events_405x720/upcoming_events_405x720_02.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/upcoming_events_405x720/upcoming_events_405x720_02.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -693,10 +697,10 @@ function show_home($uri_segments)
         'id' => 3,
         'date_time' => '18/08',
         'media' => array(
-          'logo' => $base_url . 'images/0_icons/icon_brtvmax_118x64_white.png',
+          'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
           'thumbs' => array(
-            'app' => $base_url . 'images/upcoming_events_405x720/upcoming_events_405x720_03.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/upcoming_events_405x720/upcoming_events_405x720_03.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -704,10 +708,10 @@ function show_home($uri_segments)
         'id' => 4,
         'date_time' => '25/08',
         'media' => array(
-          'logo' => $base_url . 'images/0_icons/icon_brtvmax_118x64_white.png',
+          'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
           'thumbs' => array(
-            'app' => $base_url . 'images/upcoming_events_405x720/upcoming_events_405x720_04.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/upcoming_events_405x720/upcoming_events_405x720_04.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -715,10 +719,10 @@ function show_home($uri_segments)
         'id' => 5,
         'date_time' => '29/09',
         'media' => array(
-          'logo' => $base_url . 'images/0_icons/icon_brtvmax_118x64_white.png',
+          'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
           'thumbs' => array(
-            'app' => $base_url . 'images/upcoming_events_405x720/upcoming_events_405x720_05.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/upcoming_events_405x720/upcoming_events_405x720_05.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -726,10 +730,10 @@ function show_home($uri_segments)
         'id' => 6,
         'date_time' => '06/10',
         'media' => array(
-          'logo' => $base_url . 'images/0_icons/icon_brtvmax_118x64_white.png',
+          'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
           'thumbs' => array(
-            'app' => $base_url . 'images/upcoming_events_405x720/upcoming_events_405x720_06.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/upcoming_events_405x720/upcoming_events_405x720_06.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -754,8 +758,8 @@ function show_home($uri_segments)
         'url' => '',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/celebrities_720x720/celebrities_720x720_01.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/celebrities_720x720/celebrities_720x720_01.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -766,8 +770,8 @@ function show_home($uri_segments)
         'url' => '',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/celebrities_720x720/celebrities_720x720_02.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/celebrities_720x720/celebrities_720x720_02.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -778,8 +782,8 @@ function show_home($uri_segments)
         'url' => '',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/celebrities_720x720/celebrities_720x720_03.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/celebrities_720x720/celebrities_720x720_03.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -790,8 +794,8 @@ function show_home($uri_segments)
         'url' => '',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/celebrities_720x720/celebrities_720x720_04.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/celebrities_720x720/celebrities_720x720_04.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -813,8 +817,8 @@ function show_upcoming_events($uri_segments)
 
     case "get_endpoints":
       $endpoints = array(
-        ['endpoint' => 'live_now/'],
-        ['endpoint' => 'upcoming_events/']
+        ['endpoint' => 'upcoming_events/live_now/'],
+        ['endpoint' => 'upcoming_events/upcoming_events/']
       );
       echo str_replace("\/", "/", json_encode($endpoints, JSON_UNESCAPED_UNICODE));
       break;
@@ -823,7 +827,7 @@ function show_upcoming_events($uri_segments)
         'section' => array(
           'title' => 'ao vivo agora',
           'see_more' => 'Ver todos »',
-          'url' => $base_url . 'live_now/get_endpoints'
+          'url' => BASE_URL . 'live_now/get_endpoints'
         )
       );
       $item1 = array(
@@ -836,10 +840,10 @@ function show_upcoming_events($uri_segments)
         'subscribe' => false,
         'text_button' => 'COMPRAR',
         'media' => array(
-          'logo' => $base_url . 'images/0_icons/icon_brtvmax_118x64_white.png',
+          'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
           'thumbs' => array(
-            'app' => $base_url . 'images/live_now_720x405/live_now_720x405_01.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/live_now_720x405/live_now_720x405_01.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -853,10 +857,10 @@ function show_upcoming_events($uri_segments)
         'subscribe' => true,
         'text_button' => 'ASSINAR',
         'media' => array(
-          'logo' => $base_url . 'images/0_icons/icon_brtvmax_118x64_white.png',
+          'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
           'thumbs' => array(
-            'app' => $base_url . 'images/live_now_720x405/live_now_720x405_02.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/live_now_720x405/live_now_720x405_02.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -865,15 +869,15 @@ function show_upcoming_events($uri_segments)
         'title' => 'CRP ARENA DREAMS',
         'time' => 'A partir das 15h30',
         'is_purchased' => true,
-        'url_checkout' => $base_url . 'live_now/1/get_endpoints',
+        'url_checkout' => BASE_URL . 'live_now/1/get_endpoints',
         'watch' => true,
         'subscribe' => false,
         'text_button' => 'ASSISTIR',
         'media' => array(
-          'logo' => $base_url . 'images/0_icons/icon_youtube_118x64.png',
+          'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
           'thumbs' => array(
-            'app' => $base_url . 'images/live_now_720x405/live_now_720x405_03.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/live_now_720x405/live_now_720x405_03.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -882,15 +886,15 @@ function show_upcoming_events($uri_segments)
         'title' => 'EXPOAQUI',
         'time' => 'A partir das 15h30',
         'is_purchased' => true,
-        'url_checkout' => $base_url . 'live_now/2/get_endpoints',
+        'url_checkout' => BASE_URL . 'live_now/2/get_endpoints',
         'watch' => true,
         'subscribe' => false,
         'text_button' => 'ASSISTIR',
         'media' => array(
-          'logo' => $base_url . 'images/0_icons/icon_youtube_118x64.png',
+          'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
           'thumbs' => array(
-            'app' => $base_url . 'images/live_now_720x405/live_now_720x405_04.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/live_now_720x405/live_now_720x405_04.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -930,8 +934,8 @@ function show_upcoming_events($uri_segments)
         'text_button_primary' => 'COMPRAR',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/series_thumbs_480x480/series_thumbs_480x480_01.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/series_thumbs_480x480/series_thumbs_480x480_01.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -946,8 +950,8 @@ function show_upcoming_events($uri_segments)
         'text_button_primary' => 'ASSINAR',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/series_thumbs_480x480/series_thumbs_480x480_01.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/series_thumbs_480x480/series_thumbs_480x480_01.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -956,14 +960,14 @@ function show_upcoming_events($uri_segments)
         'title' => 'PBR Stamped Days',
         'date_time' => '15/03 | 18:00',
         'is_purchased' => true,
-        'url_checkout' => $base_url.'video/3/get_endpoints',
+        'url_checkout' => BASE_URL . 'video/3/get_endpoints',
         'watch' => true,
         'subscribe' => false,
         'text_button_primary' => 'ASSISTIR',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/series_thumbs_480x480/series_thumbs_480x480_01.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/series_thumbs_480x480/series_thumbs_480x480_01.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
@@ -978,18 +982,180 @@ function show_upcoming_events($uri_segments)
         'text_button_primary' => 'COMPRAR',
         'media' => array(
           'thumbs' => array(
-            'app' => $base_url . 'images/series_thumbs_480x480/series_thumbs_480x480_01.jpg',
-            'web' => $base_url . 'images/'
+            'app' => BASE_URL . 'images/series_thumbs_480x480/series_thumbs_480x480_01.jpg',
+            'web' => BASE_URL . 'images/'
           )
         )
       );
-      
-      foreach($main_section['items'] as $key => $item) {
+
+      foreach ($main_section['items'] as $key => $item) {
         $main_section['items'][$key]['items'] = $event_item;
       }
-      
+
       echo str_replace("\/", "/", json_encode($main_section, JSON_UNESCAPED_UNICODE));
       break;
+
+    default:
+      echo "Aguardando endpoint";
+  }
+}
+function show_channels($uri_segments)
+{
+  switch ($uri_segments[5]) {
+
+    case "get_endpoints":
+      $endpoints = array(
+        ['endpoint' => 'channels/1/highlight_medium/'],
+        ['endpoint' => 'channels/1/live_now/']
+      );
+      echo str_replace("\/", "/", json_encode($endpoints, JSON_UNESCAPED_UNICODE));
+      break;
+
+    case "highlight_medium":
+      $full_object = array(
+        'section' => array(
+          'title' => 'Destaques',
+        )
+      );
+      $item1 = array(
+        'id' => 1,
+        'title' => 'BARRETOS: PROVAS COM CAVALOS',
+        'short_description' => 'Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        'is_purchased' => false,
+        'url_checkout' => BASE_URL . 'video/1/get_endpoints',
+        'watch' => true,
+        'subscribe' => false,
+        'text_button' => 'ASSISTIR',
+        'date_time' => '15/03 | 18:00',
+        'media' => array(
+          'trailer' => 'http://.../xxx.m3u8',
+          'thumbs' => array(
+            'app' => BASE_URL . 'images/highlight_medium_1080x1720/highlight_medium_1080x1720_01.jpg',
+            'web' => BASE_URL . 'images/'
+          )
+        )
+      );
+      $item2 = array(
+        'id' => 2,
+        'title' => 'FINAIS DO RODEIO DE BARRETOS',
+        'short_description' => 'Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        'is_purchased' => false,
+        'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
+        'watch' => false,
+        'subscribe' => false,
+        'text_button' => 'COMPRAR',
+        'date_time' => '15/03 | 18:00',
+        'media' => array(
+          'trailer' => 'http://.../xxx.m3u8',
+          'thumbs' => array(
+            'app' => BASE_URL . 'images/highlight_medium_1080x1720/highlight_medium_1080x1720_02.jpg',
+            'web' => BASE_URL . 'images/'
+          )
+        )
+      );
+      $item3 = array(
+        'id' => 3,
+        'title' => 'ADRENALINA E POEIRA: MELHORES MOMENTOS DE BARRETOS 2022',
+        'short_description' => 'Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        'is_purchased' => false,
+        'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
+        'watch' => false,
+        'subscribe' => true,
+        'text_button' => 'ASSINAR',
+        'date_time' => '15/03 | 18:00',
+        'media' => array(
+          'trailer' => 'http://.../xxx.m3u8',
+          'thumbs' => array(
+            'app' => BASE_URL . 'images/highlight_medium_1080x1720/highlight_medium_1080x1720_03.jpg',
+            'web' => BASE_URL . 'images/'
+          )
+        )
+      );
+      $full_object['items'] = array($item1, $item2, $item3);
+      echo str_replace("\/", "/", json_encode(array($full_object), JSON_UNESCAPED_UNICODE));
+      break;
+
+    case "live_now":
+      $full_object = array(
+        'section' => array(
+          'title' => 'ao vivo agora',
+          'see_more' => 'Ver todos »',
+          'url' => BASE_URL . 'live_now/get_endpoints'
+        )
+      );
+      $item1 = array(
+        'id' => 1,
+        'title' => 'MEGA RODEIO MARAU',
+        'time' => 'A partir das 18h',
+        'is_purchased' => false,
+        'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
+        'watch' => false,
+        'subscribe' => false,
+        'text_button' => 'COMPRAR',
+        'media' => array(
+          'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+          'thumbs' => array(
+            'app' => BASE_URL . 'images/live_now_720x405/live_now_720x405_01.jpg',
+            'web' => BASE_URL . 'images/'
+          )
+        )
+      );
+      $item2 = array(
+        'id' => 2,
+        'title' => 'COLORADO',
+        'time' => 'A partir das 18h',
+        'is_purchased' => false,
+        'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
+        'watch' => false,
+        'subscribe' => true,
+        'text_button' => 'ASSINAR',
+        'media' => array(
+          'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+          'thumbs' => array(
+            'app' => BASE_URL . 'images/live_now_720x405/live_now_720x405_02.jpg',
+            'web' => BASE_URL . 'images/'
+          )
+        )
+      );
+      $item3 = array(
+        'id' => 3,
+        'title' => 'CRP ARENA DREAMS',
+        'time' => 'A partir das 15h30',
+        'is_purchased' => true,
+        'url_checkout' => BASE_URL . 'live_now/1/get_endpoints',
+        'watch' => true,
+        'subscribe' => false,
+        'text_button' => 'ASSISTIR',
+        'media' => array(
+          'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
+          'thumbs' => array(
+            'app' => BASE_URL . 'images/live_now_720x405/live_now_720x405_03.jpg',
+            'web' => BASE_URL . 'images/'
+          )
+        )
+      );
+      $item4 = array(
+        'id' => 4,
+        'title' => 'EXPOAQUI',
+        'time' => 'A partir das 15h30',
+        'is_purchased' => true,
+        'url_checkout' => BASE_URL . 'live_now/2/get_endpoints',
+        'watch' => true,
+        'subscribe' => false,
+        'text_button' => 'ASSISTIR',
+        'media' => array(
+          'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
+          'thumbs' => array(
+            'app' => BASE_URL . 'images/live_now_720x405/live_now_720x405_04.jpg',
+            'web' => BASE_URL . 'images/'
+          )
+        )
+      );
+
+      $full_object['items'] = array($item1, $item2, $item3, $item4);
+      echo str_replace("\/", "/", json_encode($full_object, JSON_UNESCAPED_UNICODE));
+      break;
+
 
     default:
       echo "Aguardando endpoint";
