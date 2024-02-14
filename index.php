@@ -675,6 +675,7 @@ function show_home($uri_segments)
       );
       $item1 = array(
         'id' => 1,
+        'title' => '',
         'date_time' => '15/03',
         'media' => array(
           'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
@@ -686,6 +687,7 @@ function show_home($uri_segments)
       );
       $item2 = array(
         'id' => 2,
+        'title' => '',
         'date_time' => '19/05',
         'media' => array(
           'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
@@ -697,6 +699,7 @@ function show_home($uri_segments)
       );
       $item3 = array(
         'id' => 3,
+        'title' => '',
         'date_time' => '18/08',
         'media' => array(
           'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
@@ -708,6 +711,7 @@ function show_home($uri_segments)
       );
       $item4 = array(
         'id' => 4,
+        'title' => '',
         'date_time' => '25/08',
         'media' => array(
           'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
@@ -719,6 +723,7 @@ function show_home($uri_segments)
       );
       $item5 = array(
         'id' => 5,
+        'title' => '',
         'date_time' => '29/09',
         'media' => array(
           'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
@@ -730,6 +735,7 @@ function show_home($uri_segments)
       );
       $item6 = array(
         'id' => 6,
+        'title' => '',
         'date_time' => '06/10',
         'media' => array(
           'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
