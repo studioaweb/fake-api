@@ -1,4 +1,9 @@
 <?php
+header("Access-Control-Allow-Origin: *");
+header("HTTP/1.1 200 OK");
+header("Content-Type: application/json; charset=UTF-8");
+header("Access-Control-Allow-Methods: OPTIONS,GET,POST,PUT,DELETE");
+header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
 $uri_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $uri_segments = explode('/', $uri_path);
@@ -116,11 +121,6 @@ function show_home($uri_segments)
                     )
                 )
             );
-            header("Access-Control-Allow-Origin: *");
-            header("Content-Type: application/json; charset=UTF-8");
-            header("Access-Control-Allow-Methods: OPTIONS,GET,POST,PUT,DELETE");
-            header("Access-Control-Max-Age: 3600");
-            header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
             echo str_replace("\/", "/", json_encode(array($item1, $item2, $item3), JSON_UNESCAPED_UNICODE));
             break;
 
