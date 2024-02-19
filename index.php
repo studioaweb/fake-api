@@ -1,4 +1,9 @@
 <?php
+header("Access-Control-Allow-Origin: *");
+header("HTTP/1.1 200 OK");
+header("Content-Type: application/json; charset=UTF-8");
+header("Access-Control-Allow-Methods: OPTIONS,GET,POST,PUT,DELETE");
+header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
 $uri_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $uri_segments = explode('/', $uri_path);
@@ -65,9 +70,10 @@ function show_home($uri_segments)
                 'date_time' => '15/03 | 18:00',
                 'media' => array(
                     'trailer' => 'http://.../xxx.m3u8',
+                    'background' => IMAGES_URL . 'highlight_large_1920x1080/highlight_large_1920x1080_01.jpg',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'highlight_large_1080x1920/highlight_large_1080x1920_01.jpg',
-                        'web' => IMAGES_URL
+                        'web' => IMAGES_URL . 'highlight_large_thumbs_198x352/highlight_large_thumbs_198x352_01.jpg'
                     )
                 )
             );
@@ -86,9 +92,10 @@ function show_home($uri_segments)
                 'date_time' => '15/03 | 18:00',
                 'media' => array(
                     'trailer' => 'http://.../xxx.m3u8',
+                    'background' => IMAGES_URL . 'highlight_large_1920x1080/highlight_large_1920x1080_02.jpg',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'highlight_large_1080x1920/highlight_large_1080x1920_02.jpg',
-                        'web' => IMAGES_URL
+                        'web' => IMAGES_URL . 'highlight_large_thumbs_198x352/highlight_large_thumbs_198x352_02.jpg'
                     )
                 )
             );
@@ -107,9 +114,10 @@ function show_home($uri_segments)
                 'date_time' => '15/03 | 18:00',
                 'media' => array(
                     'trailer' => 'http://.../xxx.m3u8',
+                    'background' => IMAGES_URL . 'highlight_large_1920x1080/highlight_large_1920x1080_03.jpg',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'highlight_large_1080x1920/highlight_large_1080x1920_03.jpg',
-                        'web' => IMAGES_URL
+                        'web' => IMAGES_URL . 'highlight_large_thumbs_198x352/highlight_large_thumbs_198x352_03.jpg'
                     )
                 )
             );
