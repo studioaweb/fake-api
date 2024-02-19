@@ -1570,23 +1570,20 @@ function show_live_details($uri_segments)
         case "content":
             $details = array(
                     'date_time' => '18:25 - 20:30',
-                    'title' => 'TRANSMISSÃO 1 - PROVA OD LAÇO',
+                    'title' => 'TRANSMISSÃO 1 - PROVA DO LAÇO',
                     'subtitle' => 'ESPORTE • 2021 • BRASIL',
-                    'age_group' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
-                    'definition' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
+                    'age_group' => BASE_URL . 'images/0_icons/icon_age_14_97x64',
+                    'definition' => BASE_URL . 'images/0_icons/icon_1080p_97x64',
                     'full_description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus tempor egestas. Peilentesque feugiat nulla non libero pulvinar, nec consequat neque in condimentum tempor. Integer tincidunt arcu eu eros.',
-                    'airplay' => true,
-                    'chromecast' => true,
-                    'share' => '',
-                    'favorite' => '',
-                    'my_list' => '',
-                    'text_button_primary' => 'INTERAGIR',
-                    'text_button_secondary' => 'SAIBA MAIS',
-                    'text_button_terciary' => 'ESTATÍSTICAS',
+                    'is_favorited' => false,
+                    'is_watch_later' => false,
+                    'details_button_primary' => 'INTERAGIR',
+                    'details_button_secondary' => 'SAIBA MAIS',
+                    'details_button_terciary' => 'ESTATÍSTICAS',
                 );
 
             $chat = array(
-                'iframe_src' => 'https://beyond.spalla.io/player/?video=018a10d2-dc8a-7b57-a187-18c48277f944&bar=1&aid=-1',
+                'iframe_src' => '',
                 );
 
             $full_object['items'] = array($details, $chat);
@@ -1925,9 +1922,9 @@ function show_video_details($uri_segments)
             $player = array(
                 'is_purchased' => true,
                 'subscribe' => false,
-                'text_button' => 'COMPRAR',
-                'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
-                'player' => 'youtube',
+                'text_button' => '',
+                'url_checkout' => '',
+                'player' => 'spalla',
                 'iframe_url' => 'https://beyond.spalla.io/player/?video=018a10d2-dc8a-7b57-a187-18c48277f944&bar=1&aid=-1',
                 'media' => array(
                     'thumbs' => array(
@@ -1943,15 +1940,11 @@ function show_video_details($uri_segments)
             $details = array(
                 'title' => 'TRANSMISSÃO 1 - PROVA OD LAÇO',
                 'subtitle' => 'ESPORTE • 2021 • 1H32M • BRASIL',
-                'age_group' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
-                'definition' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
-                'src' => 'https://ads.xstreaming.com.br/?_dnid=46&t=1707340941',
+                'age_group' => BASE_URL . 'images/0_icons/icon_age_14_97x64',
+                'definition' => BASE_URL . 'images/0_icons/icon_1080p_97x64',
                 'full_description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus tempor egestas. Peilentesque feugiat nulla non libero pulvinar, nec consequat neque in condimentum tempor. Integer tincidunt arcu eu eros.',
-                'airplay' => true,
-                'chromecast' => true,
-                'share' => '',
-                'favourite' => '',
-                'my_list' => ''
+                'is_favorited' => false,
+                'is_watch_later' => false
             );
             echo str_replace("\/", "/", json_encode($details, JSON_UNESCAPED_UNICODE));
             break;
