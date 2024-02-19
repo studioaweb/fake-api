@@ -29,6 +29,9 @@ switch ($uri_segments[3]) {
     case "video_details":
         show_video_details($uri_segments);
         break;
+    case "live_menu":
+        show_live_menu($uri_segments);
+        break;
 }
 
 function show_home($uri_segments)
@@ -2354,4 +2357,131 @@ function show_video_details($uri_segments)
         echo "Aguardando endpoint";
     }
 
+}
+
+function show_live_menu($uri_segments)
+{
+    switch ($uri_segments[4]) {
+
+        case "get_endpoints":
+            $endpoints = array(
+                ['endpoint' => 'live_menu/player/'],
+                ['endpoint' => 'live_menu/details/'],
+                ['endpoint' => 'live_menu/live_now']
+            );
+            echo str_replace("\/", "/", json_encode($endpoints, JSON_UNESCAPED_UNICODE));
+            break;
+
+        case "player":
+            $player = array(
+                'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                'title' => 'PBR | COLORADO 2023 | SEXTA-FEIRA',
+                'is_purchased' => true,
+                'subscribe' => false,
+                'text_button' => '',
+                'url_checkout' => '',
+                'player' => 'spalla',
+                'iframe_url' => 'https://beyond.spalla.io/player/?video=018a10d2-dc8a-7b57-a187-18c48277f944&bar=1&aid=-1',
+                'media' => array(
+                    'thumbs' => array(
+                        'app' => IMAGES_URL . 'store_720x720/store_720x720_01.jpg',
+                        'web' => IMAGES_URL
+                    )
+                )
+                );
+            echo str_replace("\/", "/", json_encode($player, JSON_UNESCAPED_UNICODE));
+            break;
+
+        case "details":
+            $details = array(
+                'full_description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus tempor egestas. Peilentesque feugiat nulla non libero pulvinar, nec consequat neque in condimentum tempor. Integer tincidunt arcu eu eros.',
+                'is_favorited' => false,
+                'is_watch_later' => false,
+                'text_button' => 'PROGRAMAÇÃO'
+            );
+            echo str_replace("\/", "/", json_encode($details, JSON_UNESCAPED_UNICODE));
+            break;
+
+        case "live_now":
+            $full_object = array(
+                'section' => array(
+                    'title' => 'ao vivo agora'
+                )
+            );
+            $item1 = array(
+                'id' => 1,
+                'title' => 'MEGA RODEIO MARAU',
+                'time' => 'A partir das 18h',
+                'is_purchased' => false,
+                'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
+                'watch' => false,
+                'subscribe' => false,
+                'text_button' => 'COMPRAR',
+                'media' => array(
+                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'thumbs' => array(
+                        'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_01.jpg',
+                        'web' => IMAGES_URL
+                    )
+                )
+            );
+            $item2 = array(
+                'id' => 2,
+                'title' => 'COLORADO',
+                'time' => 'A partir das 18h',
+                'is_purchased' => false,
+                'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
+                'watch' => false,
+                'subscribe' => false,
+                'text_button' => 'COMPRAR',
+                'media' => array(
+                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'thumbs' => array(
+                        'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_02.jpg',
+                        'web' => IMAGES_URL
+                    )
+                )
+            );
+            $item3 = array(
+                'id' => 3,
+                'title' => 'CRP ARENA DREAMS',
+                'time' => 'A partir das 15h30',
+                'is_purchased' => true,
+                'url_checkout' => BASE_URL . 'live_now/1/get_endpoints',
+                'watch' => true,
+                'subscribe' => false,
+                'text_button' => 'ASSISTIR',
+                'media' => array(
+                    'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
+                    'thumbs' => array(
+                        'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_03.jpg',
+                        'web' => IMAGES_URL
+                    )
+                )
+            );
+            $item4 = array(
+                'id' => 4,
+                'title' => 'EXPOAQUI',
+                'time' => 'A partir das 15h30',
+                'is_purchased' => true,
+                'url_checkout' => BASE_URL . 'live_now/2/get_endpoints',
+                'watch' => true,
+                'subscribe' => false,
+                'text_button' => 'ASSISTIR',
+                'media' => array(
+                    'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
+                    'thumbs' => array(
+                        'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_04.jpg',
+                        'web' => IMAGES_URL
+                    )
+                )
+            );
+
+            $full_object['items'] = array($item1, $item2, $item3, $item4);
+            echo str_replace("\/", "/", json_encode($full_object, JSON_UNESCAPED_UNICODE));
+            break;
+
+        default:
+        echo "Aguardando endpoint";
+    }
 }
