@@ -2511,6 +2511,7 @@ function show_more_menu($uri_segments)
             ),
             'details' => array(
                 'title' => 'BRTVMAX',
+                'description' => 'Esportes rurais ao vivo, informações e o maior acervo de imagens de rodeio',
                 'icons' => array(
                     'title_icons' => 'SIGA A BRTVMAX NAS REDES SOCIAIS',
                     'facebook' => '',
@@ -2536,15 +2537,15 @@ function show_more_menu($uri_segments)
                     'text_field' => 'E-mail*',
                     'is_subscribed' => false
                 ),
-            ),
+            ));
             
             $store = array(
             'section' => array(
                 'title' => 'Loja Oficial',
                 'see_more' => 'Mais produtos »',
                 'url' => 'https://shopee.com.br',
-                )
-            ),
+            ));
+            
                 $store_item1 = array(
                     'id' => 1,
                     'title' => 'BOTA TEXANA',
@@ -2556,7 +2557,7 @@ function show_more_menu($uri_segments)
                             'web' => IMAGES_URL
                         )
                     )
-                ),
+                        );
                 $store_item2 = array(
                     'id' => 2,
                     'title' => 'CINTO MASTER WRANGLER',
@@ -2568,7 +2569,7 @@ function show_more_menu($uri_segments)
                             'web' => IMAGES_URL
                         )
                     )
-                ),
+                        );
                 $store_item3 = array(
                     'id' => 3,
                     'title' => 'CHAPÉU LONG HORN',
@@ -2580,7 +2581,7 @@ function show_more_menu($uri_segments)
                             'web' => IMAGES_URL
                         )
                     )
-                ),
+                        );
                 $store_item4 = array(
                     'id' => 4,
                     'title' => 'CALÇA JEANS RODEIO',
@@ -2592,8 +2593,8 @@ function show_more_menu($uri_segments)
                             'web' => IMAGES_URL
                         )
                     )
-                ),
-                $store['store_items'] = array($store_item1, $store_item2, $store_item3, $store_item4),
+                        );
+                $store['store_items'] = array($store_item1, $store_item2, $store_item3, $store_item4);
 
                 
             $upcoming_events = array(
@@ -2602,7 +2603,7 @@ function show_more_menu($uri_segments)
                     'see_more' => 'Ver todos »',
                     'url' => BASE_URL . 'upcoming_events/get_endpoints'
                 )
-                ),
+                );
                 $event_item1 = array(
                     'id' => 1,
                     'date_time' => '15/03',
@@ -2613,7 +2614,7 @@ function show_more_menu($uri_segments)
                             'web' => IMAGES_URL
                         )
                     )
-                ),
+                        );
                 $event_item2 = array(
                     'id' => 2,
                     'date_time' => '19/05',
@@ -2624,7 +2625,7 @@ function show_more_menu($uri_segments)
                             'web' => IMAGES_URL
                         )
                     )
-                ),
+                        );
                 $event_item3 = array(
                     'id' => 3,
                     'date_time' => '18/08',
@@ -2635,7 +2636,7 @@ function show_more_menu($uri_segments)
                             'web' => IMAGES_URL
                         )
                     )
-                ),
+                        );
                 $event_item4 = array(
                     'id' => 4,
                     'date_time' => '25/08',
@@ -2646,7 +2647,7 @@ function show_more_menu($uri_segments)
                             'web' => IMAGES_URL
                         )
                     )
-                ),
+                        );
                 $event_item5 = array(
                     'id' => 5,
                     'date_time' => '29/09',
@@ -2657,7 +2658,7 @@ function show_more_menu($uri_segments)
                             'web' => IMAGES_URL
                         )
                     )
-                ),
+                        );
                 $event_item6 = array(
                     'id' => 6,
                     'date_time' => '06/10',
@@ -2668,12 +2669,13 @@ function show_more_menu($uri_segments)
                             'web' => IMAGES_URL
                         )
                     )
-                ),
+                        );
 
-                $upcoming_events['events_items'] = array($event_item1, $event_item2, $event_item3, $event_item4, $event_item5, $event_item6)
+                $upcoming_events['events_items'] = array($event_item1, $event_item2, $event_item3, $event_item4, $event_item5, $event_item6);
 
-        );
-        echo str_replace("\/", "/", json_encode($information, JSON_UNESCAPED_UNICODE));
+                $full_object = array ($information, $store, $upcoming_events);
+
+        echo str_replace("\/", "/", json_encode($full_object, JSON_UNESCAPED_UNICODE));
         break;
 
         case "list":
