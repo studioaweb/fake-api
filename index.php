@@ -2495,12 +2495,14 @@ function show_more_menu($uri_segments)
 
         case "get_endpoints":
             $endpoints = array(
-                ['endpoint' => 'more_menu/']
+                ['endpoint' => 'more_menu/information'],
+                ['endpoint' => 'more_menu/list'],
+                ['endpoint' => 'more_menu/profile']
             );
             echo str_replace("\/", "/", json_encode($endpoints, JSON_UNESCAPED_UNICODE));
             break;
 
-        case "":
+        case "information":
         $information = array(
             'title' => 'Informações',
             'banner' => array(
@@ -2672,7 +2674,9 @@ function show_more_menu($uri_segments)
 
         );
         echo str_replace("\/", "/", json_encode($information, JSON_UNESCAPED_UNICODE));
+        break;
 
+        case "list":
         $list = array(
             'title' => 'Minha Lista',
             'section' => array(
@@ -2746,38 +2750,60 @@ function show_more_menu($uri_segments)
 
         $list['items'] = array($list_item1, $list_item2, $list_item3, $list_item4);
         echo str_replace("\/", "/", json_encode($list, JSON_UNESCAPED_UNICODE));
+        break;
 
+        case "profile":
         $profile = array (
             'title' => 'Perfil',
             'picture' => '',
+            'title_name' => 'NOME',
             'name' => 'Carla Andrade',
+            'title_email' => 'E-MAIL',
             'email' => 'carla.andrade@gmail.com',
+            'title_password' => 'SENHA',
             'password' => '******',
             'purshases' => array(
-            $purshase1 = array ( 
-            'id' => 1,
-            'product' => 'Plano Etapa NY',
-            'date_time' => '25/01/2024',
-            'status' => 'Ativo'),
-            $purshase2 = array ( 
-            'id' => 2,
-            'product' => 'Plano Mensal Fevereiro',
-            'date_time' => '01/02/2024',
-            'status' => 'Ativo'),
-            $purshase3 = array ( 
-            'id' => 3,
-            'product' => 'Assinatura Plano Gold',
-            'date_time' => '25/11/2023',
-            'status' => 'Ativo'),
-            $purshase4 = array ( 
-            'id' => 4,
-            'product' => 'PPV Colorado',
-            'date_time' => '25/03/2023',
-            'status' => 'Cancelado')
+                'purchases_title' => 'COMPRAS E ASSINATURAS',
+                $purshase1 = array ( 
+                    'id' => 1,
+                    'product' => 'Plano Etapa NY',
+                    'date_time' => '25/01/2024',
+                    'status' => 'Ativo'),
+                $purshase2 = array ( 
+                    'id' => 2,
+                    'product' => 'Plano Mensal Fevereiro',
+                    'date_time' => '01/02/2024',
+                    'status' => 'Ativo'),
+                $purshase3 = array ( 
+                    'id' => 3,
+                    'product' => 'Assinatura Plano Gold',
+                    'date_time' => '25/11/2023',
+                    'status' => 'Ativo'),
+                $purshase4 = array ( 
+                    'id' => 4,
+                    'product' => 'PPV Colorado',
+                    'date_time' => '25/03/2023',
+                    'status' => 'Cancelado')
             )
-
         );
-        echo str_replace("\/", "/", json_encode($profile, JSON_UNESCAPED_UNICODE));
-               
+        $modal = array(
+            'title' => 'EDITAR DADOS',
+            'description' => 'Você pode alterar seus dados de cadastro nos campos abaixo, com exceção do e-mail',
+            'title_name' => 'NOME',
+            'name' => 'Carla Andrade',
+            'title_email' => 'E-MAIL',
+            'email' => 'carla.andrade@gmail.com',
+            'title_password' => 'SENHA',
+            'senha' => '******',
+            'text_button' => 'SALVAR',
+            'text_button_secondary' => 'CANCELAR'
+        );
+        $full_object = array(
+            $full_object[0] = $profile,
+            $full_object[1] = $modal,
+        );
+
+        echo str_replace("\/", "/", json_encode($full_object, JSON_UNESCAPED_UNICODE));
+        break;
     }
 }
