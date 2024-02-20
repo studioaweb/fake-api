@@ -114,7 +114,7 @@ function show_home($uri_segments)
                 'url_checkout' => BASE_URL . 'fake-api/vide/1/get_endpoints',
                 'watch' => true,
                 'subscribe' => false,
-                'text_button_primary' => 'ASSINAR',
+                'text_button_primary' => 'ASSISTIR',
                 'text_button_secondary' => 'VER DESCRIÇÃO COMPLETA',
                 'full_description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a tortor nunc. Praesent cursus suscipit nulla et volutpat. Donec pretium enim in purus ultrices, a vehicula nisi mollis.',
                 'date_time' => '15/03 | 18:00',
