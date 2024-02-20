@@ -32,6 +32,9 @@ switch ($uri_segments[3]) {
     case "live_menu":
         show_live_menu($uri_segments);
         break;
+    case "more_menu":
+        show_more_menu($uri_segments);
+        break;
 }
 
 function show_home($uri_segments)
@@ -2483,5 +2486,298 @@ function show_live_menu($uri_segments)
 
         default:
         echo "Aguardando endpoint";
+    }
+}
+
+function show_more_menu($uri_segments)
+{
+    switch ($uri_segments[4]) {
+
+        case "get_endpoints":
+            $endpoints = array(
+                ['endpoint' => 'more_menu/']
+            );
+            echo str_replace("\/", "/", json_encode($endpoints, JSON_UNESCAPED_UNICODE));
+            break;
+
+        case "":
+        $information = array(
+            'title' => 'Informações',
+            'banner' => array(
+                    'app' => IMAGES_URL . 'celebrities_720x720/celebrities_720x720_01.jpg',
+                    'web' => IMAGES_URL
+            ),
+            'details' => array(
+                'title' => 'BRTVMAX',
+                'icons' => array(
+                    'title_icons' => 'SIGA A BRTVMAX NAS REDES SOCIAIS',
+                    'facebook' => '',
+                    'instagram' => '',
+                    'x' => '',
+                    'youtube' => '',
+                    'tiktok' => ''
+                ),
+                'contact' => array(
+                    'title_contact' => 'ENTRE EM CONTATO',
+                    'email' => 'contato@brtvmax.com',
+                    'whatsapp' => '+55 17 99771-8312'
+                ),
+                'links' => array (
+                    'title_links' => 'LINKS',
+                    'terms_of_use' => '',
+                    'terms_of_service' => '',
+                    'cookies_policy' => '',
+                    'privacy_policy' => ''
+                ),
+                'newsletter' => array(
+                    'title_newsletter' => 'INSCREVA-SE NA NEWSLETTER',
+                    'text_field' => 'E-mail*',
+                    'is_subscribed' => false
+                ),
+            ),
+            
+            $store = array(
+            'section' => array(
+                'title' => 'Loja Oficial',
+                'see_more' => 'Mais produtos »',
+                'url' => 'https://shopee.com.br',
+                )
+            ),
+                $store_item1 = array(
+                    'id' => 1,
+                    'title' => 'BOTA TEXANA',
+                    'price' => 'R$ 129,99',
+                    'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
+                    'media' => array(
+                        'thumbs' => array(
+                            'app' => IMAGES_URL . 'store_720x720/store_720x720_01.jpg',
+                            'web' => IMAGES_URL
+                        )
+                    )
+                ),
+                $store_item2 = array(
+                    'id' => 2,
+                    'title' => 'CINTO MASTER WRANGLER',
+                    'price' => 'R$ 81,00',
+                    'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
+                    'media' => array(
+                        'thumbs' => array(
+                            'app' => IMAGES_URL . 'store_720x720/store_720x720_02.jpg',
+                            'web' => IMAGES_URL
+                        )
+                    )
+                ),
+                $store_item3 = array(
+                    'id' => 3,
+                    'title' => 'CHAPÉU LONG HORN',
+                    'price' => 'R$ 119,90',
+                    'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
+                    'media' => array(
+                        'thumbs' => array(
+                            'app' => IMAGES_URL . 'store_720x720/store_720x720_03.jpg',
+                            'web' => IMAGES_URL
+                        )
+                    )
+                ),
+                $store_item4 = array(
+                    'id' => 4,
+                    'title' => 'CALÇA JEANS RODEIO',
+                    'price' => 'R$ 73,97',
+                    'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
+                    'media' => array(
+                        'thumbs' => array(
+                            'app' => IMAGES_URL . 'store_720x720/store_720x720_04.jpg',
+                            'web' => IMAGES_URL
+                        )
+                    )
+                ),
+                $store['store_items'] = array($store_item1, $store_item2, $store_item3, $store_item4),
+
+                
+            $upcoming_events = array(
+                'section' => array(
+                    'title' => 'Próximos Eventos',
+                    'see_more' => 'Ver todos »',
+                    'url' => BASE_URL . 'upcoming_events/get_endpoints'
+                )
+                ),
+                $event_item1 = array(
+                    'id' => 1,
+                    'date_time' => '15/03',
+                    'media' => array(
+                        'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                        'thumbs' => array(
+                            'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_01.jpg',
+                            'web' => IMAGES_URL
+                        )
+                    )
+                ),
+                $event_item2 = array(
+                    'id' => 2,
+                    'date_time' => '19/05',
+                    'media' => array(
+                        'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                        'thumbs' => array(
+                            'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_02.jpg',
+                            'web' => IMAGES_URL
+                        )
+                    )
+                ),
+                $event_item3 = array(
+                    'id' => 3,
+                    'date_time' => '18/08',
+                    'media' => array(
+                        'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                        'thumbs' => array(
+                            'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_03.jpg',
+                            'web' => IMAGES_URL
+                        )
+                    )
+                ),
+                $event_item4 = array(
+                    'id' => 4,
+                    'date_time' => '25/08',
+                    'media' => array(
+                        'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                        'thumbs' => array(
+                            'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_04.jpg',
+                            'web' => IMAGES_URL
+                        )
+                    )
+                ),
+                $event_item5 = array(
+                    'id' => 5,
+                    'date_time' => '29/09',
+                    'media' => array(
+                        'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                        'thumbs' => array(
+                            'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_05.jpg',
+                            'web' => IMAGES_URL
+                        )
+                    )
+                ),
+                $event_item6 = array(
+                    'id' => 6,
+                    'date_time' => '06/10',
+                    'media' => array(
+                        'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                        'thumbs' => array(
+                            'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_06.jpg',
+                            'web' => IMAGES_URL
+                        )
+                    )
+                ),
+
+                $upcoming_events['events_items'] = array($event_item1, $event_item2, $event_item3, $event_item4, $event_item5, $event_item6)
+
+        );
+        echo str_replace("\/", "/", json_encode($information, JSON_UNESCAPED_UNICODE));
+
+        $list = array(
+            'title' => 'Minha Lista',
+            'section' => array(
+                'title' => 'ao vivo agora',
+            )
+        );
+        $list_item1 = array(
+            'id' => 1,
+            'title' => 'MEGA RODEIO MARAU',
+            'is_purchased' => false,
+            'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
+            'watch' => false,
+            'subscribe' => false,
+            'text_button' => 'COMPRAR',
+            'full_description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.',
+            'media' => array(
+                'thumbs' => array(
+                    'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_01.jpg',
+                    'web' => IMAGES_URL
+                )
+            )
+        );
+        $list_item2 = array(
+            'id' => 2,
+            'title' => 'COLORADO',
+            'is_purchased' => false,
+            'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
+            'watch' => false,
+            'subscribe' => false,
+            'text_button' => 'COMPRAR',
+            'full_description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.',
+            'media' => array(
+                'thumbs' => array(
+                    'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_02.jpg',
+                    'web' => IMAGES_URL
+                )
+            )
+        );
+        $list_item3 = array(
+            'id' => 3,
+            'title' => 'CRP ARENA DREAMS',
+            'is_purchased' => true,
+            'url_checkout' => BASE_URL . 'live_now/1/get_endpoints',
+            'watch' => true,
+            'subscribe' => false,
+            'text_button' => 'ASSISTIR',
+            'full_description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.',
+            'media' => array(
+                'thumbs' => array(
+                    'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_03.jpg',
+                    'web' => IMAGES_URL
+                )
+            )
+        );
+        $list_item4 = array(
+            'id' => 4,
+            'title' => 'EXPOAQUI',
+            'is_purchased' => true,
+            'url_checkout' => BASE_URL . 'live_now/2/get_endpoints',
+            'watch' => true,
+            'subscribe' => false,
+            'text_button' => 'ASSISTIR',
+            'full_description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.',
+            'media' => array(
+                'thumbs' => array(
+                    'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_04.jpg',
+                    'web' => IMAGES_URL
+                )
+            )
+        );
+
+        $list['items'] = array($list_item1, $list_item2, $list_item3, $list_item4);
+        echo str_replace("\/", "/", json_encode($list, JSON_UNESCAPED_UNICODE));
+
+        $profile = array (
+            'title' => 'Perfil',
+            'picture' => '',
+            'name' => 'Carla Andrade',
+            'email' => 'carla.andrade@gmail.com',
+            'password' => '******',
+            'purshases' => array(
+            $purshase1 = array ( 
+            'id' => 1,
+            'product' => 'Plano Etapa NY',
+            'date_time' => '25/01/2024',
+            'status' => 'Ativo'),
+            $purshase2 = array ( 
+            'id' => 2,
+            'product' => 'Plano Mensal Fevereiro',
+            'date_time' => '01/02/2024',
+            'status' => 'Ativo'),
+            $purshase3 = array ( 
+            'id' => 3,
+            'product' => 'Assinatura Plano Gold',
+            'date_time' => '25/11/2023',
+            'status' => 'Ativo'),
+            $purshase4 = array ( 
+            'id' => 4,
+            'product' => 'PPV Colorado',
+            'date_time' => '25/03/2023',
+            'status' => 'Cancelado')
+            )
+
+        );
+        echo str_replace("\/", "/", json_encode($profile, JSON_UNESCAPED_UNICODE));
+               
     }
 }
