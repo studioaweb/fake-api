@@ -216,7 +216,7 @@ function show_home($uri_segments)
                     'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_01.jpg',
-                        'web' => IMAGES_URL
+                        'web' => IMAGES_URL . 'live_now_720x405/live_now_720x405_01.jpg'
                     )
                 )
             );
@@ -233,7 +233,7 @@ function show_home($uri_segments)
                     'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_02.jpg',
-                        'web' => IMAGES_URL
+                        'web' => IMAGES_URL . 'live_now_720x405/live_now_720x405_02.jpg'
                     )
                 )
             );
@@ -250,7 +250,7 @@ function show_home($uri_segments)
                     'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_03.jpg',
-                        'web' => IMAGES_URL
+                        'web' => IMAGES_URL . 'live_now_720x405/live_now_720x405_03.jpg'
                     )
                 )
             );
@@ -267,7 +267,7 @@ function show_home($uri_segments)
                     'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_04.jpg',
-                        'web' => IMAGES_URL
+                        'web' => IMAGES_URL . 'live_now_720x405/live_now_720x405_04.jpg'
                     )
                 )
             );
