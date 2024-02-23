@@ -327,8 +327,8 @@ function show_home($uri_segments)
                 'is_purchased' => false,
                 'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
                 'watch' => false,
-                'subscribe' => true,
-                'text_button' => 'ASSINAR',
+                'subscribe' => false,
+                'text_button' => 'COMPRAR',
                 'date_time' => '15/03 | 18:00',
                 'media' => array(
                     'trailer' => 'http://.../xxx.m3u8',
