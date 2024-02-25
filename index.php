@@ -1331,7 +1331,7 @@ function show_channels($uri_segments)
                     'id' => 1,
                     'src' => 'https://ads.xstreaming.com.br/?_dnid=46&t=1707340941',
                     'id_web' => 8,
-                    'src_web' => 'https://ads.xstreaming.com.br/?_dnid=86&t=1707340941'
+                    'src_web' => 'https://ads.xstreaming.com.br/?_dnid=8'
                 );
                 echo str_replace("\/", "/", json_encode($banner, JSON_UNESCAPED_UNICODE));
             }
@@ -1340,7 +1340,7 @@ function show_channels($uri_segments)
                     'id' => 2,
                     'src' => 'https://ads.xstreaming.com.br/?_dnid=50',
                     'id_web' => 9,
-                    'src_web' => 'https://ads.xstreaming.com.br/?_dnid9'
+                    'src_web' => 'https://ads.xstreaming.com.br/?_dnid=9'
                 );
                 echo str_replace("\/", "/", json_encode($banner, JSON_UNESCAPED_UNICODE));
             }
