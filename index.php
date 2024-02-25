@@ -213,7 +213,7 @@ function show_home($uri_segments)
                 'subscribe' => false,
                 'text_button' => 'COMPRAR',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_01.jpg',
                         'web' => IMAGES_URL . 'live_now_720x405/live_now_720x405_01.jpg'
@@ -230,7 +230,7 @@ function show_home($uri_segments)
                 'subscribe' => true,
                 'text_button' => 'ASSINAR',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_02.jpg',
                         'web' => IMAGES_URL . 'live_now_720x405/live_now_720x405_02.jpg'
@@ -247,7 +247,7 @@ function show_home($uri_segments)
                 'subscribe' => false,
                 'text_button' => 'ASSISTIR',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_youtube_118x64.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_03.jpg',
                         'web' => IMAGES_URL . 'live_now_720x405/live_now_720x405_03.jpg'
@@ -264,7 +264,7 @@ function show_home($uri_segments)
                 'subscribe' => false,
                 'text_button' => 'ASSISTIR',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_youtube_118x64.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_04.jpg',
                         'web' => IMAGES_URL . 'live_now_720x405/live_now_720x405_04.jpg'
@@ -707,7 +707,7 @@ function show_home($uri_segments)
                 'title' => '',
                 'date_time' => '15/03',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_01.jpg',
                         'web' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_01.jpg',
@@ -719,7 +719,7 @@ function show_home($uri_segments)
                 'title' => '',
                 'date_time' => '19/05',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_02.jpg',
                         'web' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_02.jpg',
@@ -731,7 +731,7 @@ function show_home($uri_segments)
                 'title' => '',
                 'date_time' => '18/08',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_03.jpg',
                         'web' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_03.jpg',
@@ -743,7 +743,7 @@ function show_home($uri_segments)
                 'title' => '',
                 'date_time' => '25/08',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_04.jpg',
                         'web' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_04.jpg',
@@ -755,7 +755,7 @@ function show_home($uri_segments)
                 'title' => '',
                 'date_time' => '29/09',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_05.jpg',
                         'web' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_05.jpg',
@@ -767,7 +767,7 @@ function show_home($uri_segments)
                 'title' => '',
                 'date_time' => '06/10',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_06.jpg',
                         'web' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_06.jpg',
@@ -877,7 +877,7 @@ function show_upcoming_events($uri_segments)
                 'subscribe' => false,
                 'text_button' => 'COMPRAR',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_01.jpg',
                         'web' => IMAGES_URL
@@ -894,7 +894,7 @@ function show_upcoming_events($uri_segments)
                 'subscribe' => true,
                 'text_button' => 'ASSINAR',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_02.jpg',
                         'web' => IMAGES_URL
@@ -911,7 +911,7 @@ function show_upcoming_events($uri_segments)
                 'subscribe' => false,
                 'text_button' => 'ASSISTIR',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_youtube_118x64.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_03.jpg',
                         'web' => IMAGES_URL
@@ -928,7 +928,7 @@ function show_upcoming_events($uri_segments)
                 'subscribe' => false,
                 'text_button' => 'ASSISTIR',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_youtube_118x64.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_04.jpg',
                         'web' => IMAGES_URL
@@ -1135,7 +1135,7 @@ function show_channels($uri_segments)
                 'subscribe' => false,
                 'text_button' => 'COMPRAR',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_01.jpg',
                         'web' => IMAGES_URL
@@ -1152,7 +1152,7 @@ function show_channels($uri_segments)
                 'subscribe' => true,
                 'text_button' => 'ASSINAR',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_02.jpg',
                         'web' => IMAGES_URL
@@ -1169,7 +1169,7 @@ function show_channels($uri_segments)
                 'subscribe' => false,
                 'text_button' => 'ASSISTIR',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_youtube_118x64.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_03.jpg',
                         'web' => IMAGES_URL
@@ -1186,7 +1186,7 @@ function show_channels($uri_segments)
                 'subscribe' => false,
                 'text_button' => 'ASSISTIR',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_youtube_118x64.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_04.jpg',
                         'web' => IMAGES_URL
@@ -1716,7 +1716,7 @@ function show_live_details($uri_segments)
                 'subscribe' => false,
                 'text_button' => 'COMPRAR',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_01.jpg',
                         'web' => IMAGES_URL
@@ -1733,7 +1733,7 @@ function show_live_details($uri_segments)
                 'subscribe' => true,
                 'text_button' => 'ASSINAR',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_02.jpg',
                         'web' => IMAGES_URL
@@ -1750,7 +1750,7 @@ function show_live_details($uri_segments)
                 'subscribe' => false,
                 'text_button' => 'ASSISTIR',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_youtube_118x64.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_03.jpg',
                         'web' => IMAGES_URL
@@ -1767,7 +1767,7 @@ function show_live_details($uri_segments)
                 'subscribe' => false,
                 'text_button' => 'ASSISTIR',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_youtube_118x64.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_04.jpg',
                         'web' => IMAGES_URL
@@ -1792,7 +1792,7 @@ function show_live_details($uri_segments)
                 'title' => '',
                 'date_time' => '15/03',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_01.jpg',
                         'web' => IMAGES_URL
@@ -1804,7 +1804,7 @@ function show_live_details($uri_segments)
                 'title' => '',
                 'date_time' => '19/05',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_02.jpg',
                         'web' => IMAGES_URL
@@ -1816,7 +1816,7 @@ function show_live_details($uri_segments)
                 'title' => '',
                 'date_time' => '18/08',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_03.jpg',
                         'web' => IMAGES_URL
@@ -1828,7 +1828,7 @@ function show_live_details($uri_segments)
                 'title' => '',
                 'date_time' => '25/08',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_04.jpg',
                         'web' => IMAGES_URL
@@ -1840,7 +1840,7 @@ function show_live_details($uri_segments)
                 'title' => '',
                 'date_time' => '29/09',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_05.jpg',
                         'web' => IMAGES_URL
@@ -1852,7 +1852,7 @@ function show_live_details($uri_segments)
                 'title' => '',
                 'date_time' => '06/10',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_06.jpg',
                         'web' => IMAGES_URL
@@ -2055,7 +2055,7 @@ function show_video_details($uri_segments)
                 'title' => 'PROVA DO LAÇO BARRETOS',
                 'url' => BASE_URL . 'video/1/get_endpoints',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_01.jpg',
                         'web' => IMAGES_URL
@@ -2067,7 +2067,7 @@ function show_video_details($uri_segments)
                 'title' => 'RODEIO EM CAVALOS PBR',
                 'url' => BASE_URL . 'video/2/get_endpoints',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_01.jpg',
                         'web' => IMAGES_URL
@@ -2079,7 +2079,7 @@ function show_video_details($uri_segments)
                 'title' => '3 TAMBORES MARAU',
                 'url' => BASE_URL . 'video/3/get_endpoints',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_youtube_118x64.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_01.jpg',
                         'web' => IMAGES_URL
@@ -2091,7 +2091,7 @@ function show_video_details($uri_segments)
                 'title' => 'PBR: PROVA DO LAÇO',
                 'url' => BASE_URL . 'video/4/get_endpoints',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_youtube_118x64.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_01.jpg',
                         'web' => IMAGES_URL
@@ -2396,7 +2396,7 @@ function show_live_menu($uri_segments)
 
         case "player":
             $player = array(
-                'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                 'title' => 'PBR | COLORADO 2023 | SEXTA-FEIRA',
                 'is_purchased' => true,
                 'subscribe' => false,
@@ -2440,7 +2440,7 @@ function show_live_menu($uri_segments)
                 'subscribe' => false,
                 'text_button' => 'COMPRAR',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_01.jpg',
                         'web' => IMAGES_URL
@@ -2457,7 +2457,7 @@ function show_live_menu($uri_segments)
                 'subscribe' => false,
                 'text_button' => 'COMPRAR',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_02.jpg',
                         'web' => IMAGES_URL
@@ -2474,7 +2474,7 @@ function show_live_menu($uri_segments)
                 'subscribe' => false,
                 'text_button' => 'ASSISTIR',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_youtube_118x64.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_03.jpg',
                         'web' => IMAGES_URL
@@ -2491,7 +2491,7 @@ function show_live_menu($uri_segments)
                 'subscribe' => false,
                 'text_button' => 'ASSISTIR',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_youtube_118x64.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_youtube_118x64.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'live_now_720x405/live_now_720x405_04.jpg',
                         'web' => IMAGES_URL
@@ -2629,7 +2629,7 @@ function show_more_menu($uri_segments)
                 'id' => 1,
                 'date_time' => '15/03',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_01.jpg',
                         'web' => IMAGES_URL
@@ -2640,7 +2640,7 @@ function show_more_menu($uri_segments)
                 'id' => 2,
                 'date_time' => '19/05',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_02.jpg',
                         'web' => IMAGES_URL
@@ -2651,7 +2651,7 @@ function show_more_menu($uri_segments)
                 'id' => 3,
                 'date_time' => '18/08',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_03.jpg',
                         'web' => IMAGES_URL
@@ -2662,7 +2662,7 @@ function show_more_menu($uri_segments)
                 'id' => 4,
                 'date_time' => '25/08',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_04.jpg',
                         'web' => IMAGES_URL
@@ -2673,7 +2673,7 @@ function show_more_menu($uri_segments)
                 'id' => 5,
                 'date_time' => '29/09',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_05.jpg',
                         'web' => IMAGES_URL
@@ -2684,7 +2684,7 @@ function show_more_menu($uri_segments)
                 'id' => 6,
                 'date_time' => '06/10',
                 'media' => array(
-                    'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
+                    'logo' => IMAGES_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_06.jpg',
                         'web' => IMAGES_URL
