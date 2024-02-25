@@ -1677,14 +1677,18 @@ function show_live_details($uri_segments)
             if ($uri_segments[5] == 1) {
                 $banner = array(
                     'id' => 1,
-                    'src' => 'https://ads.xstreaming.com.br/?_dnid=46&t=1707340941'
+                    'src' => 'https://ads.xstreaming.com.br/?_dnid=46&t=1707340941',
+                    'id_web' => 8,
+                    'src_web' => 'https://ads.xstreaming.com.br/?_dnid=8'
                 );
                 echo str_replace("\/", "/", json_encode($banner, JSON_UNESCAPED_UNICODE));
             }
             if ($uri_segments[5] == 2) {
                 $banner = array(
                     'id' => 2,
-                    'src' => 'https://ads.xstreaming.com.br/?_dnid=50&t=1707341210'
+                    'src' => 'https://ads.xstreaming.com.br/?_dnid=50&t=1707341210',
+                    'id_web' => 9,
+                    'src_web' => 'https://ads.xstreaming.com.br/?_dnid=9'
                 );
                 echo str_replace("\/", "/", json_encode($banner, JSON_UNESCAPED_UNICODE));
             }
@@ -2289,14 +2293,18 @@ function show_video_details($uri_segments)
             if ($uri_segments[5] == 1) {
                 $banner = array(
                     'id' => 1,
-                    'src' => 'https://ads.xstreaming.com.br/?_dnid=46&t=1707340941'
+                    'src' => 'https://ads.xstreaming.com.br/?_dnid=46&t=1707340941',
+                    'id_web' => 8,
+                    'src_web' => 'https://ads.xstreaming.com.br/?_dnid=8'
                 );
                 echo str_replace("\/", "/", json_encode($banner, JSON_UNESCAPED_UNICODE));
             }
             if ($uri_segments[5] == 2) {
                 $banner = array(
                     'id' => 2,
-                    'src' => 'https://ads.xstreaming.com.br/?_dnid=50&t=1707341210'
+                    'src' => 'https://ads.xstreaming.com.br/?_dnid=50&t=1707341210',
+                    'id_web' => 9,
+                    'src_web' => 'https://ads.xstreaming.com.br/?_dnid=9'
                 );
                 echo str_replace("\/", "/", json_encode($banner, JSON_UNESCAPED_UNICODE));
             }
