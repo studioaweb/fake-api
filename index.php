@@ -722,7 +722,7 @@ function show_home($uri_segments)
                     'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_02.jpg',
-                        'web' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_01.jpg',
+                        'web' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_02.jpg',
                     )
                 )
             );
@@ -734,7 +734,7 @@ function show_home($uri_segments)
                     'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_03.jpg',
-                        'web' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_01.jpg',
+                        'web' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_03.jpg',
                     )
                 )
             );
@@ -746,7 +746,7 @@ function show_home($uri_segments)
                     'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_04.jpg',
-                        'web' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_01.jpg',
+                        'web' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_04.jpg',
                     )
                 )
             );
@@ -758,7 +758,7 @@ function show_home($uri_segments)
                     'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_05.jpg',
-                        'web' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_01.jpg',
+                        'web' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_05.jpg',
                     )
                 )
             );
@@ -770,7 +770,7 @@ function show_home($uri_segments)
                     'logo' => BASE_URL . 'images/0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_06.jpg',
-                        'web' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_01.jpg',
+                        'web' => IMAGES_URL . 'upcoming_events_405x720/upcoming_events_405x720_06.jpg',
                     )
                 )
             );
