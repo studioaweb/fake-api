@@ -55,7 +55,8 @@ function show_home($uri_segments)
                 ['endpoint' => 'home/ads_medium_banner/1'],
                 ['endpoint' => 'home/upcoming_events/'],
                 ['endpoint' => 'home/celebrities/'],
-                ['endpoint' => 'home/ads_medium_banner/2']
+                ['endpoint' => 'home/ads_medium_banner/2'],
+                ['endpoint' => 'home/ads_small_banner/1']
             );
             echo str_replace("\/", "/", json_encode($endpoints, JSON_UNESCAPED_UNICODE));
             break;
@@ -692,6 +693,18 @@ function show_home($uri_segments)
                 );
                 echo str_replace("\/", "/", json_encode($banner, JSON_UNESCAPED_UNICODE));
             }
+            break;
+
+        case "ads_small_banner":
+            $banner1 = array(
+                'id_web' => 9,
+                'src_web' => 'https://ads.xstreaming.com.br/?_dnid=9'
+            );
+            $banner2 = array(
+                'id_web' => 10,
+                'src_web' => 'https://ads.xstreaming.com.br/?_dnid=10'
+            );
+            echo str_replace("\/", "/", json_encode(array($banner1, $banner2), JSON_UNESCAPED_UNICODE));
             break;
 
         case "upcoming_events":
