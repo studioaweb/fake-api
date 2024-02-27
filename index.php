@@ -2573,7 +2573,7 @@ function show_more_menu($uri_segments)
             );
 
             $store = array(
-                'section' => array(
+                'store' => array(
                     'title' => 'Loja Oficial',
                     'see_more' => 'Mais produtos »',
                     'url' => 'https://shopee.com.br',
@@ -2632,7 +2632,7 @@ function show_more_menu($uri_segments)
 
 
             $upcoming_events = array(
-                'section' => array(
+                'upcoming_events' => array(
                     'title' => 'Próximos Eventos',
                     'see_more' => 'Ver todos »',
                     'url' => BASE_URL . 'upcoming_events/get_endpoints'
@@ -2705,7 +2705,7 @@ function show_more_menu($uri_segments)
                 )
             );
 
-            $upcoming_events['events_items'] = array($event_item1, $event_item2, $event_item3, $event_item4, $event_item5, $event_item6);
+            $upcoming_events['items'] = array($event_item1, $event_item2, $event_item3, $event_item4, $event_item5, $event_item6);
 
             $full_object = array($information, $store, $upcoming_events);
 
