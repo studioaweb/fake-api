@@ -2536,10 +2536,12 @@ function show_more_menu($uri_segments)
 
         case "information":
             $information = array(
-                'title' => 'Informações',
-                'banner' => array(
-                    'app' => IMAGES_URL . 'celebrities_720x720/celebrities_720x720_01.jpg',
-                    'web' => IMAGES_URL
+                'section' => array(
+                    'title' => 'Informações',
+                    'banner' => array(
+                        'app' => IMAGES_URL . 'celebrities_720x720/celebrities_720x720_01.jpg',
+                        'web' => IMAGES_URL
+                    )
                 ),
                 'details' => array(
                     'title' => 'BRTVMAX',
@@ -2574,9 +2576,11 @@ function show_more_menu($uri_segments)
 
             $store = array(
                 'store' => array(
-                    'title' => 'Loja Oficial',
-                    'see_more' => 'Mais produtos »',
-                    'url' => 'https://shopee.com.br',
+                    'section' => array(
+                        'title' => 'Loja Oficial',
+                        'see_more' => 'Mais produtos »',
+                        'url' => 'https://shopee.com.br',
+                    )
                 )
             );
 
@@ -2628,7 +2632,7 @@ function show_more_menu($uri_segments)
                     )
                 )
             );
-            $store['store_items'] = array($store_item1, $store_item2, $store_item3, $store_item4);
+            $store['items'] = array($store_item1, $store_item2, $store_item3, $store_item4);
 
 
             $upcoming_events = array(
