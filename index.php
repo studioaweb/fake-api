@@ -2535,7 +2535,7 @@ function show_more_menu($uri_segments)
             break;
 
         case "information":
-            $information = array(
+            $information['information'] = array(
                 'section' => array(
                     'title' => 'Informações',
                     'banner' => array(
