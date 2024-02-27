@@ -2713,7 +2713,7 @@ function show_more_menu($uri_segments)
 
             $full_object = array($information, $store, $upcoming_events);
 
-            echo str_replace("\/", "/", json_encode($full_object, JSON_UNESCAPED_UNICODE));
+            echo str_replace("\/", "/", json_encode($full_object[0], JSON_UNESCAPED_UNICODE));
             break;
 
         case "list":
