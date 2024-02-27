@@ -2635,8 +2635,8 @@ function show_more_menu($uri_segments)
             $store['items'] = array($store_item1, $store_item2, $store_item3, $store_item4);
 
 
-            $upcoming_events = array(
-                'upcoming_events' => array(
+            $upcoming_events['upcoming_events'] = array(
+                'section' => array(
                     'title' => 'Próximos Eventos',
                     'see_more' => 'Ver todos »',
                     'url' => BASE_URL . 'upcoming_events/get_endpoints'
