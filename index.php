@@ -2574,14 +2574,14 @@ function show_more_menu($uri_segments)
                 )
             );
 
-            $store = array(
-                'store' => array(
+            $information['store'] = array(
+                
                     'section' => array(
                         'title' => 'Loja Oficial',
                         'see_more' => 'Mais produtos »',
                         'url' => 'https://shopee.com.br',
                     )
-                )
+                
             );
 
             $store_item1 = array(
@@ -2632,10 +2632,10 @@ function show_more_menu($uri_segments)
                     )
                 )
             );
-            $store['items'] = array($store_item1, $store_item2, $store_item3, $store_item4);
+            $information['store']['items'] = array($store_item1, $store_item2, $store_item3, $store_item4);
 
 
-            $upcoming_events['upcoming_events'] = array(
+            $information['upcoming_events'] = array(
                 'section' => array(
                     'title' => 'Próximos Eventos',
                     'see_more' => 'Ver todos »',
@@ -2709,11 +2709,9 @@ function show_more_menu($uri_segments)
                 )
             );
 
-            $upcoming_events['items'] = array($event_item1, $event_item2, $event_item3, $event_item4, $event_item5, $event_item6);
+            $information['upcoming_events']['items'] = array($event_item1, $event_item2, $event_item3, $event_item4, $event_item5, $event_item6);
 
-            $full_object = array($information, $store, $upcoming_events);
-
-            echo str_replace("\/", "/", json_encode($full_object[0], JSON_UNESCAPED_UNICODE));
+            echo str_replace("\/", "/", json_encode($information, JSON_UNESCAPED_UNICODE));
             break;
 
         case "list":
