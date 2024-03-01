@@ -278,12 +278,12 @@ function show_home($uri_segments)
             break;
 
         case "highlight_medium":
-            $full_object = array(
+            $highlight_medium = array(
                 'section' => array(
                     'title' => 'Destaques',
                 )
             );
-            $item1 = array(
+            $highlight_medium['items'][0] = array(
                 'id' => 1,
                 'title' => 'PBR RIDGE RIDER',
                 'short_description' => 'Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -302,7 +302,7 @@ function show_home($uri_segments)
                     )
                 )
             );
-            $item2 = array(
+            $highlight_medium['items'][1] = array(
                 'id' => 2,
                 'title' => 'TEAM SERIES CHEYENNE',
                 'short_description' => 'Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -321,7 +321,7 @@ function show_home($uri_segments)
                     )
                 )
             );
-            $item3 = array(
+            $highlight_medium['items'][2] = array(
                 'id' => 3,
                 'title' => 'PBR UTB 23/24 | Chicago, IL | Round 2',
                 'short_description' => 'Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -340,8 +340,7 @@ function show_home($uri_segments)
                     )
                 )
             );
-            $full_object['items'] = array($item1, $item2, $item3);
-            echo str_replace("\/", "/", json_encode(array($full_object), JSON_UNESCAPED_UNICODE));
+            echo str_replace("\/", "/", json_encode($highlight_medium, JSON_UNESCAPED_UNICODE));
             break;
 
         case "store":
