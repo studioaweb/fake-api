@@ -141,7 +141,7 @@ function show_home($uri_segments)
             $item1 = array(
                 'id' => 1,
                 'title' => 'FESTA DE COLORADO',
-                'url' => BASE_URL . 'channels/1/get_endpoints',
+                'next_endpoint' => BASE_URL . 'channels/1/get_endpoints',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'channels_405x720/channels_405_720_01.jpg',
@@ -152,7 +152,7 @@ function show_home($uri_segments)
             $item2 = array(
                 'id' => 2,
                 'title' => '30 ANOS DE BARRETOS',
-                'url' => BASE_URL . 'channels/2/get_endpoints',
+                'next_endpoint' => BASE_URL . 'channels/2/get_endpoints',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'channels_405x720/channels_405_720_02.jpg',
@@ -163,7 +163,7 @@ function show_home($uri_segments)
             $item3 = array(
                 'id' => 3,
                 'title' => 'EXPO LONDRINA',
-                'url' => BASE_URL . 'channels/3/get_endpoints',
+                'next_endpoint' => BASE_URL . 'channels/3/get_endpoints',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'channels_405x720/channels_405_720_03.jpg',
@@ -174,7 +174,7 @@ function show_home($uri_segments)
             $item4 = array(
                 'id' => 4,
                 'title' => 'COLORADO + FINAIS',
-                'url' => BASE_URL . 'channels/4/get_endpoints',
+                'next_endpoint' => BASE_URL . 'channels/4/get_endpoints',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'channels_405x720/channels_405_720_04.jpg',
@@ -201,7 +201,7 @@ function show_home($uri_segments)
                 'section' => array(
                     'title' => 'ao vivo agora',
                     'see_more' => 'Ver todos »',
-                    'url' => BASE_URL . 'live_now/get_endpoints'
+                    'next_endpoint' => BASE_URL . 'live_now/get_endpoints'
                 )
             );
             $item1 = array(
@@ -278,12 +278,12 @@ function show_home($uri_segments)
             break;
 
         case "highlight_medium":
-            $full_object = array(
+            $highlight_medium = array(
                 'section' => array(
                     'title' => 'Destaques',
                 )
             );
-            $item1 = array(
+            $highlight_medium['items'][0] = array(
                 'id' => 1,
                 'title' => 'PBR RIDGE RIDER',
                 'short_description' => 'Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -302,7 +302,7 @@ function show_home($uri_segments)
                     )
                 )
             );
-            $item2 = array(
+            $highlight_medium['items'][1] = array(
                 'id' => 2,
                 'title' => 'TEAM SERIES CHEYENNE',
                 'short_description' => 'Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -321,7 +321,7 @@ function show_home($uri_segments)
                     )
                 )
             );
-            $item3 = array(
+            $highlight_medium['items'][2] = array(
                 'id' => 3,
                 'title' => 'PBR UTB 23/24 | Chicago, IL | Round 2',
                 'short_description' => 'Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -340,8 +340,7 @@ function show_home($uri_segments)
                     )
                 )
             );
-            $full_object['items'] = array($item1, $item2, $item3);
-            echo str_replace("\/", "/", json_encode(array($full_object), JSON_UNESCAPED_UNICODE));
+            echo str_replace("\/", "/", json_encode($highlight_medium, JSON_UNESCAPED_UNICODE));
             break;
 
         case "store":
@@ -349,14 +348,14 @@ function show_home($uri_segments)
                 'section' => array(
                     'title' => 'Loja Oficial',
                     'see_more' => 'Mais produtos »',
-                    'url' => 'https://shopee.com.br',
+                    'next_endpoint' => 'https://shopee.com.br',
                 )
             );
             $item1 = array(
                 'id' => 1,
                 'title' => 'BOTA TEXANA',
                 'price' => 'R$ 129,99',
-                'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
+                'next_endpoint' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'store_720x720/store_720x720_01.jpg',
@@ -368,7 +367,7 @@ function show_home($uri_segments)
                 'id' => 2,
                 'title' => 'CINTO MASTER WRANGLER',
                 'price' => 'R$ 81,00',
-                'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
+                'next_endpoint' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'store_720x720/store_720x720_02.jpg',
@@ -380,7 +379,7 @@ function show_home($uri_segments)
                 'id' => 3,
                 'title' => 'CHAPÉU LONG HORN',
                 'price' => 'R$ 119,90',
-                'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
+                'next_endpoint' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'store_720x720/store_720x720_03.jpg',
@@ -392,7 +391,7 @@ function show_home($uri_segments)
                 'id' => 4,
                 'title' => 'CALÇA JEANS RODEIO',
                 'price' => 'R$ 73,97',
-                'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
+                'next_endpoint' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'store_720x720/store_720x720_04.jpg',
@@ -616,7 +615,7 @@ function show_home($uri_segments)
             $item1 = array(
                 'id' => 1,
                 'title' => 'CHAYENNE • PBR',
-                'url' => BASE_URL . 'video/1/get_endpoints',
+                'next_endpoint' => BASE_URL . 'video/1/get_endpoints',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'playlists_405x720/playlists_405x720_01.jpg',
@@ -627,7 +626,7 @@ function show_home($uri_segments)
             $item2 = array(
                 'id' => 2,
                 'title' => 'OUTLAW • PBR',
-                'url' => BASE_URL . 'video/2/get_endpoints',
+                'next_endpoint' => BASE_URL . 'video/2/get_endpoints',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'playlists_405x720/playlists_405x720_02.jpg',
@@ -638,7 +637,7 @@ function show_home($uri_segments)
             $item3 = array(
                 'id' => 3,
                 'title' => 'STAMPEDE • PBR',
-                'url' => BASE_URL . 'video/3/get_endpoints',
+                'next_endpoint' => BASE_URL . 'video/3/get_endpoints',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'playlists_405x720/playlists_405x720_03.jpg',
@@ -649,7 +648,7 @@ function show_home($uri_segments)
             $item4 = array(
                 'id' => 4,
                 'title' => 'GAMBLER DAYS • PBR',
-                'url' => BASE_URL . 'video/4/get_endpoints',
+                'next_endpoint' => BASE_URL . 'video/4/get_endpoints',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'playlists_405x720/playlists_405x720_04.jpg',
@@ -660,7 +659,7 @@ function show_home($uri_segments)
             $item5 = array(
                 'id' => 5,
                 'title' => 'RIDGE RIDER • PBR',
-                'url' => BASE_URL . 'video/5/get_endpoints',
+                'next_endpoint' => BASE_URL . 'video/5/get_endpoints',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'playlists_405x720/playlists_405x720_05.jpg',
@@ -712,7 +711,7 @@ function show_home($uri_segments)
                 'section' => array(
                     'title' => 'Próximos Eventos',
                     'see_more' => 'Ver todos »',
-                    'url' => BASE_URL . 'upcoming_events/get_endpoints'
+                    'next_endpoint' => BASE_URL . 'upcoming_events/get_endpoints'
                 )
             );
             $item1 = array(
@@ -805,7 +804,7 @@ function show_home($uri_segments)
                 'id' => 1,
                 'name' => 'JOHN ABRAHAN',
                 'profession' => 'Ator',
-                'url' => '',
+                'next_endpoint' => '',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'celebrities_720x720/celebrities_720x720_01.jpg',
@@ -817,7 +816,7 @@ function show_home($uri_segments)
                 'id' => 2,
                 'name' => 'LEENA BURTON',
                 'profession' => 'Atriz',
-                'url' => '',
+                'next_endpoint' => '',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'celebrities_720x720/celebrities_720x720_02.jpg',
@@ -829,7 +828,7 @@ function show_home($uri_segments)
                 'id' => 3,
                 'name' => 'LORINA WILLIANS',
                 'profession' => 'Ator',
-                'url' => '',
+                'next_endpoint' => '',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'celebrities_720x720/celebrities_720x720_03.jpg',
@@ -841,7 +840,7 @@ function show_home($uri_segments)
                 'id' => 4,
                 'name' => 'DAVINA DECOROUS',
                 'profession' => 'Atriz',
-                'url' => '',
+                'next_endpoint' => '',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'celebrities_720x720/celebrities_720x720_04.jpg',
@@ -877,7 +876,7 @@ function show_upcoming_events($uri_segments)
                 'section' => array(
                     'title' => 'ao vivo agora',
                     'see_more' => 'Ver todos »',
-                    'url' => BASE_URL . 'live_now/get_endpoints'
+                    'next_endpoint' => BASE_URL . 'live_now/get_endpoints'
                 )
             );
             $item1 = array(
@@ -1135,7 +1134,7 @@ function show_channels($uri_segments)
                 'section' => array(
                     'title' => 'ao vivo agora',
                     'see_more' => 'Ver todos »',
-                    'url' => BASE_URL . 'live_now/get_endpoints'
+                    'next_endpoint' => BASE_URL . 'live_now/get_endpoints'
                 )
             );
             $item1 = array(
@@ -1216,14 +1215,14 @@ function show_channels($uri_segments)
                 'section' => array(
                     'title' => 'Loja Oficial',
                     'see_more' => 'Mais produtos »',
-                    'url' => 'https://shopee.com.br',
+                    'next_endpoint' => 'https://shopee.com.br',
                 )
             );
             $item1 = array(
                 'id' => 1,
                 'title' => 'BOTA TEXANA',
                 'price' => 'R$ 129,99',
-                'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
+                'next_endpoint' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'store_720x720/store_720x720_01.jpg',
@@ -1235,7 +1234,7 @@ function show_channels($uri_segments)
                 'id' => 2,
                 'title' => 'CINTO MASTER WRANGLER',
                 'price' => 'R$ 81,00',
-                'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
+                'next_endpoint' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'store_720x720/store_720x720_02.jpg',
@@ -1247,7 +1246,7 @@ function show_channels($uri_segments)
                 'id' => 3,
                 'title' => 'CHAPÉU LONG HORN',
                 'price' => 'R$ 119,90',
-                'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
+                'next_endpoint' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'store_720x720/store_720x720_03.jpg',
@@ -1259,7 +1258,7 @@ function show_channels($uri_segments)
                 'id' => 4,
                 'title' => 'CALÇA JEANS RODEIO',
                 'price' => 'R$ 73,97',
-                'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
+                'next_endpoint' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'store_720x720/store_720x720_04.jpg',
@@ -1284,7 +1283,7 @@ function show_channels($uri_segments)
             $item1 = array(
                 'id' => 1,
                 'title' => 'CHAYENNE • PBR',
-                'url' => BASE_URL . 'video/1/get_endpoints',
+                'next_endpoint' => BASE_URL . 'video/1/get_endpoints',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'playlists_720x405/playlists_720x405_01.jpg',
@@ -1295,7 +1294,7 @@ function show_channels($uri_segments)
             $item2 = array(
                 'id' => 2,
                 'title' => 'OUTLAW • PBR',
-                'url' => BASE_URL . 'video/2/get_endpoints',
+                'next_endpoint' => BASE_URL . 'video/2/get_endpoints',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'playlists_720x405/playlists_720x405_02.jpg',
@@ -1306,7 +1305,7 @@ function show_channels($uri_segments)
             $item3 = array(
                 'id' => 3,
                 'title' => 'STAMPEDE • PBR',
-                'url' => BASE_URL . 'video/3/get_endpoints',
+                'next_endpoint' => BASE_URL . 'video/3/get_endpoints',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'playlists_720x405/playlists_720x405_03.jpg',
@@ -1317,7 +1316,7 @@ function show_channels($uri_segments)
             $item4 = array(
                 'id' => 4,
                 'title' => 'GAMBLER DAYS • PBR',
-                'url' => BASE_URL . 'video/4/get_endpoints',
+                'next_endpoint' => BASE_URL . 'video/4/get_endpoints',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'playlists_720x405/playlists_720x405_04.jpg',
@@ -1328,7 +1327,7 @@ function show_channels($uri_segments)
             $item5 = array(
                 'id' => 5,
                 'title' => 'RIDGE RIDER • PBR',
-                'url' => BASE_URL . 'video/5/get_endpoints',
+                'next_endpoint' => BASE_URL . 'video/5/get_endpoints',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'playlists_720x405/playlists_720x405_05.jpg',
@@ -1634,14 +1633,14 @@ function show_live_details($uri_segments)
                 'section' => array(
                     'title' => 'Loja Oficial',
                     'see_more' => 'Mais produtos »',
-                    'url' => 'https://shopee.com.br',
+                    'next_endpoint' => 'https://shopee.com.br',
                 )
             );
             $item1 = array(
                 'id' => 1,
                 'title' => 'BOTA TEXANA',
                 'price' => 'R$ 129,99',
-                'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
+                'next_endpoint' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'store_720x720/store_720x720_01.jpg',
@@ -1653,7 +1652,7 @@ function show_live_details($uri_segments)
                 'id' => 2,
                 'title' => 'CINTO MASTER WRANGLER',
                 'price' => 'R$ 81,00',
-                'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
+                'next_endpoint' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'store_720x720/store_720x720_02.jpg',
@@ -1665,7 +1664,7 @@ function show_live_details($uri_segments)
                 'id' => 3,
                 'title' => 'CHAPÉU LONG HORN',
                 'price' => 'R$ 119,90',
-                'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
+                'next_endpoint' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'store_720x720/store_720x720_03.jpg',
@@ -1677,7 +1676,7 @@ function show_live_details($uri_segments)
                 'id' => 4,
                 'title' => 'CALÇA JEANS RODEIO',
                 'price' => 'R$ 73,97',
-                'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
+                'next_endpoint' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'store_720x720/store_720x720_04.jpg',
@@ -1716,7 +1715,7 @@ function show_live_details($uri_segments)
                 'section' => array(
                     'title' => 'ao vivo agora',
                     'see_more' => 'Ver todos »',
-                    'url' => BASE_URL . 'live_now/get_endpoints'
+                    'next_endpoint' => BASE_URL . 'live_now/get_endpoints'
                 )
             );
             $item1 = array(
@@ -1797,7 +1796,7 @@ function show_live_details($uri_segments)
                 'section' => array(
                     'title' => 'Próximos Eventos',
                     'see_more' => 'Ver todos »',
-                    'url' => BASE_URL . 'upcoming_events/get_endpoints'
+                    'next_endpoint' => BASE_URL . 'upcoming_events/get_endpoints'
                 )
             );
             $item1 = array(
@@ -1889,7 +1888,7 @@ function show_live_details($uri_segments)
                 'id' => 1,
                 'name' => 'JOHN ABRAHAN',
                 'profession' => 'Ator',
-                'url' => '',
+                'next_endpoint' => '',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'celebrities_720x720/celebrities_720x720_01.jpg',
@@ -1901,7 +1900,7 @@ function show_live_details($uri_segments)
                 'id' => 2,
                 'name' => 'LEENA BURTON',
                 'profession' => 'Atriz',
-                'url' => '',
+                'next_endpoint' => '',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'celebrities_720x720/celebrities_720x720_02.jpg',
@@ -1913,7 +1912,7 @@ function show_live_details($uri_segments)
                 'id' => 3,
                 'name' => 'LORINA WILLIANS',
                 'profession' => 'Ator',
-                'url' => '',
+                'next_endpoint' => '',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'celebrities_720x720/celebrities_720x720_03.jpg',
@@ -1925,7 +1924,7 @@ function show_live_details($uri_segments)
                 'id' => 4,
                 'name' => 'DAVINA DECOROUS',
                 'profession' => 'Atriz',
-                'url' => '',
+                'next_endpoint' => '',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'celebrities_720x720/celebrities_720x720_04.jpg',
@@ -2004,7 +2003,7 @@ function show_video_details($uri_segments)
                 'id' => 1,
                 'name' => 'JOHN ABRAHAN',
                 'profession' => 'Ator',
-                'url' => '',
+                'next_endpoint' => '',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'celebrities_720x720/celebrities_720x720_01.jpg',
@@ -2016,7 +2015,7 @@ function show_video_details($uri_segments)
                 'id' => 2,
                 'name' => 'LEENA BURTON',
                 'profession' => 'Atriz',
-                'url' => '',
+                'next_endpoint' => '',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'celebrities_720x720/celebrities_720x720_02.jpg',
@@ -2028,7 +2027,7 @@ function show_video_details($uri_segments)
                 'id' => 3,
                 'name' => 'LORINA WILLIANS',
                 'profession' => 'Ator',
-                'url' => '',
+                'next_endpoint' => '',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'celebrities_720x720/celebrities_720x720_03.jpg',
@@ -2040,7 +2039,7 @@ function show_video_details($uri_segments)
                 'id' => 4,
                 'name' => 'DAVINA DECOROUS',
                 'profession' => 'Atriz',
-                'url' => '',
+                'next_endpoint' => '',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'celebrities_720x720/celebrities_720x720_04.jpg',
@@ -2066,7 +2065,7 @@ function show_video_details($uri_segments)
             $item1 = array(
                 'id' => 1,
                 'title' => 'PROVA DO LAÇO BARRETOS',
-                'url' => BASE_URL . 'video/1/get_endpoints',
+                'next_endpoint' => BASE_URL . 'video/1/get_endpoints',
                 'media' => array(
                     'logo' => IMAGES_URL . '0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
@@ -2078,7 +2077,7 @@ function show_video_details($uri_segments)
             $item2 = array(
                 'id' => 2,
                 'title' => 'RODEIO EM CAVALOS PBR',
-                'url' => BASE_URL . 'video/2/get_endpoints',
+                'next_endpoint' => BASE_URL . 'video/2/get_endpoints',
                 'media' => array(
                     'logo' => IMAGES_URL . '0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
@@ -2090,7 +2089,7 @@ function show_video_details($uri_segments)
             $item3 = array(
                 'id' => 3,
                 'title' => '3 TAMBORES MARAU',
-                'url' => BASE_URL . 'video/3/get_endpoints',
+                'next_endpoint' => BASE_URL . 'video/3/get_endpoints',
                 'media' => array(
                     'logo' => IMAGES_URL . '0_icons/icon_youtube_118x64.png',
                     'thumbs' => array(
@@ -2102,7 +2101,7 @@ function show_video_details($uri_segments)
             $item4 = array(
                 'id' => 4,
                 'title' => 'PBR: PROVA DO LAÇO',
-                'url' => BASE_URL . 'video/4/get_endpoints',
+                'next_endpoint' => BASE_URL . 'video/4/get_endpoints',
                 'media' => array(
                     'logo' => IMAGES_URL . '0_icons/icon_youtube_118x64.png',
                     'thumbs' => array(
@@ -2332,14 +2331,14 @@ function show_video_details($uri_segments)
                 'section' => array(
                     'title' => 'Loja Oficial',
                     'see_more' => 'Mais produtos »',
-                    'url' => 'https://shopee.com.br',
+                    'next_endpoint' => 'https://shopee.com.br',
                 )
             );
             $item1 = array(
                 'id' => 1,
                 'title' => 'BOTA TEXANA',
                 'price' => 'R$ 129,99',
-                'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
+                'next_endpoint' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'store_720x720/store_720x720_01.jpg',
@@ -2351,7 +2350,7 @@ function show_video_details($uri_segments)
                 'id' => 2,
                 'title' => 'CINTO MASTER WRANGLER',
                 'price' => 'R$ 81,00',
-                'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
+                'next_endpoint' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'store_720x720/store_720x720_02.jpg',
@@ -2363,7 +2362,7 @@ function show_video_details($uri_segments)
                 'id' => 3,
                 'title' => 'CHAPÉU LONG HORN',
                 'price' => 'R$ 119,90',
-                'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
+                'next_endpoint' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'store_720x720/store_720x720_03.jpg',
@@ -2375,7 +2374,7 @@ function show_video_details($uri_segments)
                 'id' => 4,
                 'title' => 'CALÇA JEANS RODEIO',
                 'price' => 'R$ 73,97',
-                'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
+                'next_endpoint' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'store_720x720/store_720x720_04.jpg',
@@ -2579,7 +2578,7 @@ function show_more_menu($uri_segments)
                     'section' => array(
                         'title' => 'Loja Oficial',
                         'see_more' => 'Mais produtos »',
-                        'url' => 'https://shopee.com.br',
+                        'next_endpoint' => 'https://shopee.com.br',
                     )
                 
             );
@@ -2588,7 +2587,7 @@ function show_more_menu($uri_segments)
                 'id' => 1,
                 'title' => 'BOTA TEXANA',
                 'price' => 'R$ 129,99',
-                'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
+                'next_endpoint' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'store_720x720/store_720x720_01.jpg',
@@ -2600,7 +2599,7 @@ function show_more_menu($uri_segments)
                 'id' => 2,
                 'title' => 'CINTO MASTER WRANGLER',
                 'price' => 'R$ 81,00',
-                'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
+                'next_endpoint' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'store_720x720/store_720x720_02.jpg',
@@ -2612,7 +2611,7 @@ function show_more_menu($uri_segments)
                 'id' => 3,
                 'title' => 'CHAPÉU LONG HORN',
                 'price' => 'R$ 119,90',
-                'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
+                'next_endpoint' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'store_720x720/store_720x720_03.jpg',
@@ -2624,7 +2623,7 @@ function show_more_menu($uri_segments)
                 'id' => 4,
                 'title' => 'CALÇA JEANS RODEIO',
                 'price' => 'R$ 73,97',
-                'url' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
+                'next_endpoint' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.1992635053',
                 'media' => array(
                     'thumbs' => array(
                         'app' => IMAGES_URL . 'store_720x720/store_720x720_04.jpg',
@@ -2639,7 +2638,7 @@ function show_more_menu($uri_segments)
                 'section' => array(
                     'title' => 'Próximos Eventos',
                     'see_more' => 'Ver todos »',
-                    'url' => BASE_URL . 'upcoming_events/get_endpoints'
+                    'next_endpoint' => BASE_URL . 'upcoming_events/get_endpoints'
                 )
             );
             $event_item1 = array(
