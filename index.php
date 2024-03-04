@@ -212,7 +212,7 @@ function show_home($uri_segments)
                 'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
                 'watch' => false,
                 'subscribe' => false,
-                'text_button' => 'COMPRAR',
+                'text_button_primary' => 'COMPRAR',
                 'media' => array(
                     'logo' => IMAGES_URL . '0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
@@ -229,7 +229,7 @@ function show_home($uri_segments)
                 'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
                 'watch' => false,
                 'subscribe' => true,
-                'text_button' => 'ASSINAR',
+                'text_button_primary' => 'ASSINAR',
                 'media' => array(
                     'logo' => IMAGES_URL . '0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
@@ -246,7 +246,7 @@ function show_home($uri_segments)
                 'url_checkout' => BASE_URL . 'live_now/1/get_endpoints',
                 'watch' => true,
                 'subscribe' => false,
-                'text_button' => 'ASSISTIR',
+                'text_button_primary' => 'ASSISTIR',
                 'media' => array(
                     'logo' => IMAGES_URL . '0_icons/icon_youtube_118x64.png',
                     'thumbs' => array(
@@ -263,7 +263,7 @@ function show_home($uri_segments)
                 'url_checkout' => BASE_URL . 'live_now/2/get_endpoints',
                 'watch' => true,
                 'subscribe' => false,
-                'text_button' => 'ASSISTIR',
+                'text_button_primary' => 'ASSISTIR',
                 'media' => array(
                     'logo' => IMAGES_URL . '0_icons/icon_youtube_118x64.png',
                     'thumbs' => array(
@@ -291,7 +291,7 @@ function show_home($uri_segments)
                 'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
                 'watch' => false,
                 'subscribe' => true,
-                'text_button' => 'ASSINAR',
+                'text_button_primary' => 'ASSINAR',
                 'date_time' => '15/03 | 18:00',
                 'media' => array(
                     'trailer' => 'http://.../xxx.m3u8',
@@ -310,7 +310,7 @@ function show_home($uri_segments)
                 'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
                 'watch' => true,
                 'subscribe' => false,
-                'text_button' => 'ASSISTIR',
+                'text_button_primary' => 'ASSISTIR',
                 'date_time' => '15/03 | 18:00',
                 'media' => array(
                     'trailer' => 'http://.../xxx.m3u8',
@@ -329,7 +329,7 @@ function show_home($uri_segments)
                 'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
                 'watch' => false,
                 'subscribe' => false,
-                'text_button' => 'COMPRAR',
+                'text_button_primary' => 'COMPRAR',
                 'date_time' => '15/03 | 18:00',
                 'media' => array(
                     'trailer' => 'http://.../xxx.m3u8',
@@ -888,7 +888,7 @@ function show_upcoming_events($uri_segments)
                 'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
                 'watch' => false,
                 'subscribe' => false,
-                'text_button' => 'COMPRAR',
+                'text_button_primary' => 'COMPRAR',
                 'media' => array(
                     'logo' => IMAGES_URL . '0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
@@ -905,7 +905,7 @@ function show_upcoming_events($uri_segments)
                 'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
                 'watch' => false,
                 'subscribe' => true,
-                'text_button' => 'ASSINAR',
+                'text_button_primary' => 'ASSINAR',
                 'media' => array(
                     'logo' => IMAGES_URL . '0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
@@ -922,7 +922,7 @@ function show_upcoming_events($uri_segments)
                 'url_checkout' => BASE_URL . 'live_now/1/get_endpoints',
                 'watch' => true,
                 'subscribe' => false,
-                'text_button' => 'ASSISTIR',
+                'text_button_primary' => 'ASSISTIR',
                 'media' => array(
                     'logo' => IMAGES_URL . '0_icons/icon_youtube_118x64.png',
                     'thumbs' => array(
@@ -939,7 +939,7 @@ function show_upcoming_events($uri_segments)
                 'url_checkout' => BASE_URL . 'live_now/2/get_endpoints',
                 'watch' => true,
                 'subscribe' => false,
-                'text_button' => 'ASSISTIR',
+                'text_button_primary' => 'ASSISTIR',
                 'media' => array(
                     'logo' => IMAGES_URL . '0_icons/icon_youtube_118x64.png',
                     'thumbs' => array(
@@ -1080,7 +1080,7 @@ function show_channels($uri_segments)
                 'url_checkout' => BASE_URL . 'video/1/get_endpoints',
                 'watch' => true,
                 'subscribe' => false,
-                'text_button' => 'ASSISTIR',
+                'text_button_primary' => 'ASSISTIR',
                 'date_time' => '15/03 | 18:00',
                 'media' => array(
                     'trailer' => 'http://.../xxx.m3u8',
@@ -1098,7 +1098,7 @@ function show_channels($uri_segments)
                 'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
                 'watch' => false,
                 'subscribe' => false,
-                'text_button' => 'COMPRAR',
+                'text_button_primary' => 'COMPRAR',
                 'date_time' => '15/03 | 18:00',
                 'media' => array(
                     'trailer' => 'http://.../xxx.m3u8',
@@ -1116,7 +1116,7 @@ function show_channels($uri_segments)
                 'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
                 'watch' => false,
                 'subscribe' => true,
-                'text_button' => 'ASSINAR',
+                'text_button_primary' => 'ASSINAR',
                 'date_time' => '15/03 | 18:00',
                 'media' => array(
                     'trailer' => 'http://.../xxx.m3u8',
@@ -1146,7 +1146,7 @@ function show_channels($uri_segments)
                 'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
                 'watch' => false,
                 'subscribe' => false,
-                'text_button' => 'COMPRAR',
+                'text_button_primary' => 'COMPRAR',
                 'media' => array(
                     'logo' => IMAGES_URL . '0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
@@ -1163,7 +1163,7 @@ function show_channels($uri_segments)
                 'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
                 'watch' => false,
                 'subscribe' => true,
-                'text_button' => 'ASSINAR',
+                'text_button_primary' => 'ASSINAR',
                 'media' => array(
                     'logo' => IMAGES_URL . '0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
@@ -1180,7 +1180,7 @@ function show_channels($uri_segments)
                 'url_checkout' => BASE_URL . 'live_now/1/get_endpoints',
                 'watch' => true,
                 'subscribe' => false,
-                'text_button' => 'ASSISTIR',
+                'text_button_primary' => 'ASSISTIR',
                 'media' => array(
                     'logo' => IMAGES_URL . '0_icons/icon_youtube_118x64.png',
                     'thumbs' => array(
@@ -1197,7 +1197,7 @@ function show_channels($uri_segments)
                 'url_checkout' => BASE_URL . 'live_now/2/get_endpoints',
                 'watch' => true,
                 'subscribe' => false,
-                'text_button' => 'ASSISTIR',
+                'text_button_primary' => 'ASSISTIR',
                 'media' => array(
                     'logo' => IMAGES_URL . '0_icons/icon_youtube_118x64.png',
                     'thumbs' => array(
@@ -1592,7 +1592,7 @@ function show_live_details($uri_segments)
             $player = array(
                 'is_purchased' => true,
                 'subscribe' => false,
-                'text_button' => '',
+                'text_button_primary' => '',
                 'url_checkout' => '',
                 'player' => 'spalla',
                 'iframe_src' => 'https://beyond.spalla.io/player/?video=018a10d2-dc8a-7b57-a187-18c48277f944&bar=1&aid=-1',
@@ -1727,7 +1727,7 @@ function show_live_details($uri_segments)
                 'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
                 'watch' => false,
                 'subscribe' => false,
-                'text_button' => 'COMPRAR',
+                'text_button_primary' => 'COMPRAR',
                 'media' => array(
                     'logo' => IMAGES_URL . '0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
@@ -1744,7 +1744,7 @@ function show_live_details($uri_segments)
                 'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
                 'watch' => false,
                 'subscribe' => true,
-                'text_button' => 'ASSINAR',
+                'text_button_primary' => 'ASSINAR',
                 'media' => array(
                     'logo' => IMAGES_URL . '0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
@@ -1761,7 +1761,7 @@ function show_live_details($uri_segments)
                 'url_checkout' => BASE_URL . 'live_now/1/get_endpoints',
                 'watch' => true,
                 'subscribe' => false,
-                'text_button' => 'ASSISTIR',
+                'text_button_primary' => 'ASSISTIR',
                 'media' => array(
                     'logo' => IMAGES_URL . '0_icons/icon_youtube_118x64.png',
                     'thumbs' => array(
@@ -1778,7 +1778,7 @@ function show_live_details($uri_segments)
                 'url_checkout' => BASE_URL . 'live_now/2/get_endpoints',
                 'watch' => true,
                 'subscribe' => false,
-                'text_button' => 'ASSISTIR',
+                'text_button_primary' => 'ASSISTIR',
                 'media' => array(
                     'logo' => IMAGES_URL . '0_icons/icon_youtube_118x64.png',
                     'thumbs' => array(
@@ -1965,7 +1965,7 @@ function show_video_details($uri_segments)
             $player = array(
                 'is_purchased' => true,
                 'subscribe' => false,
-                'text_button' => '',
+                'text_button_primary' => '',
                 'url_checkout' => '',
                 'player' => 'spalla',
                 'iframe_url' => 'https://beyond.spalla.io/player/?video=018a10d2-dc8a-7b57-a187-18c48277f944&bar=1&aid=-1',
@@ -2413,7 +2413,7 @@ function show_live_menu($uri_segments)
                 'title' => 'PBR | COLORADO 2023 | SEXTA-FEIRA',
                 'is_purchased' => true,
                 'subscribe' => false,
-                'text_button' => '',
+                'text_button_primary' => '',
                 'url_checkout' => '',
                 'player' => 'spalla',
                 'iframe_url' => 'https://beyond.spalla.io/player/?video=018a10d2-dc8a-7b57-a187-18c48277f944&bar=1&aid=-1',
@@ -2432,7 +2432,7 @@ function show_live_menu($uri_segments)
                 'full_description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus tempor egestas. Peilentesque feugiat nulla non libero pulvinar, nec consequat neque in condimentum tempor. Integer tincidunt arcu eu eros.',
                 'is_favorited' => false,
                 'is_watch_later' => false,
-                'text_button' => 'PROGRAMAÇÃO'
+                'text_button_primary' => 'PROGRAMAÇÃO'
             );
             echo str_replace("\/", "/", json_encode($details, JSON_UNESCAPED_UNICODE));
             break;
@@ -2451,7 +2451,7 @@ function show_live_menu($uri_segments)
                 'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
                 'watch' => false,
                 'subscribe' => false,
-                'text_button' => 'COMPRAR',
+                'text_button_primary' => 'COMPRAR',
                 'media' => array(
                     'logo' => IMAGES_URL . '0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
@@ -2468,7 +2468,7 @@ function show_live_menu($uri_segments)
                 'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
                 'watch' => false,
                 'subscribe' => false,
-                'text_button' => 'COMPRAR',
+                'text_button_primary' => 'COMPRAR',
                 'media' => array(
                     'logo' => IMAGES_URL . '0_icons/icon_brtvmax_118x64_white.png',
                     'thumbs' => array(
@@ -2485,7 +2485,7 @@ function show_live_menu($uri_segments)
                 'url_checkout' => BASE_URL . 'live_now/1/get_endpoints',
                 'watch' => true,
                 'subscribe' => false,
-                'text_button' => 'ASSISTIR',
+                'text_button_primary' => 'ASSISTIR',
                 'media' => array(
                     'logo' => IMAGES_URL . '0_icons/icon_youtube_118x64.png',
                     'thumbs' => array(
@@ -2502,7 +2502,7 @@ function show_live_menu($uri_segments)
                 'url_checkout' => BASE_URL . 'live_now/2/get_endpoints',
                 'watch' => true,
                 'subscribe' => false,
-                'text_button' => 'ASSISTIR',
+                'text_button_primary' => 'ASSISTIR',
                 'media' => array(
                     'logo' => IMAGES_URL . '0_icons/icon_youtube_118x64.png',
                     'thumbs' => array(
@@ -2728,7 +2728,7 @@ function show_more_menu($uri_segments)
                 'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
                 'watch' => false,
                 'subscribe' => false,
-                'text_button' => 'COMPRAR',
+                'text_button_primary' => 'COMPRAR',
                 'full_description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.',
                 'media' => array(
                     'thumbs' => array(
@@ -2744,7 +2744,7 @@ function show_more_menu($uri_segments)
                 'url_checkout' => 'https://shopee.com.br/kit-botina-mateira-rodeio-mais-cinto-country-i.387378180.19926350538',
                 'watch' => false,
                 'subscribe' => false,
-                'text_button' => 'COMPRAR',
+                'text_button_primary' => 'COMPRAR',
                 'full_description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.',
                 'media' => array(
                     'thumbs' => array(
@@ -2760,7 +2760,7 @@ function show_more_menu($uri_segments)
                 'url_checkout' => BASE_URL . 'live_now/1/get_endpoints',
                 'watch' => true,
                 'subscribe' => false,
-                'text_button' => 'ASSISTIR',
+                'text_button_primary' => 'ASSISTIR',
                 'full_description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.',
                 'media' => array(
                     'thumbs' => array(
@@ -2776,7 +2776,7 @@ function show_more_menu($uri_segments)
                 'url_checkout' => BASE_URL . 'live_now/2/get_endpoints',
                 'watch' => true,
                 'subscribe' => false,
-                'text_button' => 'ASSISTIR',
+                'text_button_primary' => 'ASSISTIR',
                 'full_description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.',
                 'media' => array(
                     'thumbs' => array(
@@ -2837,7 +2837,7 @@ function show_more_menu($uri_segments)
                 'email' => 'carla.andrade@gmail.com',
                 'title_password' => 'SENHA',
                 'senha' => '******',
-                'text_button' => 'SALVAR',
+                'text_button_primary' => 'SALVAR',
                 'text_button_secondary' => 'CANCELAR'
             );
             $full_object = array(
