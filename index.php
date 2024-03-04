@@ -142,6 +142,7 @@ function show_home($uri_segments)
             $item1 = array(
                 'id' => 1,
                 'title' => 'FESTA DE COLORADO',
+                'slug' => 'pbr',
                 'next_endpoint' => BASE_URL . 'channels/1/get_endpoints',
                 'media' => array(
                     'thumbs' => array(
@@ -153,6 +154,7 @@ function show_home($uri_segments)
             $item2 = array(
                 'id' => 2,
                 'title' => '30 ANOS DE BARRETOS',
+                'slug' => 'pbr',
                 'next_endpoint' => BASE_URL . 'channels/2/get_endpoints',
                 'media' => array(
                     'thumbs' => array(
@@ -164,6 +166,7 @@ function show_home($uri_segments)
             $item3 = array(
                 'id' => 3,
                 'title' => 'EXPO LONDRINA',
+                'slug' => 'pbr',
                 'next_endpoint' => BASE_URL . 'channels/3/get_endpoints',
                 'media' => array(
                     'thumbs' => array(
@@ -175,6 +178,7 @@ function show_home($uri_segments)
             $item4 = array(
                 'id' => 4,
                 'title' => 'COLORADO + FINAIS',
+                'slug' => 'pbr',
                 'next_endpoint' => BASE_URL . 'channels/4/get_endpoints',
                 'media' => array(
                     'thumbs' => array(
