@@ -13,6 +13,7 @@ $images_url = 'https://studioaweb.com.br/xstreaming/images/';
 define('BASE_URL', $base_url);
 define('IMAGES_URL', $images_url);
 
+//CHAMADA PRINCIPAL DA PÁGINA
 switch ($uri_segments[3]) {
     case "home":
         show_home($uri_segments);
