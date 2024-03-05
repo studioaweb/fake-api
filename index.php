@@ -1611,7 +1611,7 @@ function show_live_details($uri_segments)
             break;
 
         case "content":
-            $details = array(
+            $content['details'] = array(
                 'date_time' => '18:25 - 20:30',
                 'title' => 'TRANSMISSÃO 1 - PROVA DO LAÇO',
                 'subtitle' => 'ESPORTE • 2021 • BRASIL',
@@ -1620,17 +1620,19 @@ function show_live_details($uri_segments)
                 'full_description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus tempor egestas. Peilentesque feugiat nulla non libero pulvinar, nec consequat neque in condimentum tempor. Integer tincidunt arcu eu eros.',
                 'is_favorited' => false,
                 'is_watch_later' => false,
-                'details_button_primary' => 'INTERAGIR',
-                'details_button_secondary' => 'SAIBA MAIS',
-                'details_button_terciary' => 'ESTATÍSTICAS',
+                'text_button_primary' => 'INTERAGIR',
+                'text_button_secondary' => 'SAIBA MAIS',
+                'text_button_terciary' => 'ESTATÍSTICAS',
+                'url_button_primary' => 'https://google.com',
+                'url_button_secondary' => 'https://google.com',
+                'url_button_terciary' => 'https://google.com'
             );
 
-            $chat = array(
-                'iframe_src' => '',
+            $content['chat'] = array(
+                'iframe_src' => 'https://url-do-chat.com',
             );
 
-            $full_object['items'] = array($details, $chat);
-            echo str_replace("\/", "/", json_encode($full_object, JSON_UNESCAPED_UNICODE));
+            echo str_replace("\/", "/", json_encode($content, JSON_UNESCAPED_UNICODE));
 
             break;
         case "store":
