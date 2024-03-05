@@ -1622,10 +1622,10 @@ function show_live_details($uri_segments)
                 'is_watch_later' => false,
                 'text_button_primary' => 'INTERAGIR',
                 'text_button_secondary' => 'SAIBA MAIS',
-                'text_button_terciary' => 'ESTATÍSTICAS',
+                'text_button_tertiary' => 'ESTATÍSTICAS',
                 'url_button_primary' => 'https://google.com',
                 'url_button_secondary' => 'https://google.com',
-                'url_button_terciary' => 'https://google.com'
+                'url_button_tertiary' => 'https://google.com'
             );
 
             $content['chat'] = array(
