@@ -2436,8 +2436,6 @@ function show_live_menu($uri_segments)
         case "details":
             $details = array(
                 'full_description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus tempor egestas. Peilentesque feugiat nulla non libero pulvinar, nec consequat neque in condimentum tempor. Integer tincidunt arcu eu eros.',
-                'is_favorited' => false,
-                'is_watch_later' => false,
                 'text_button_primary' => 'PROGRAMAÇÃO',
                 'url_button_primary' => 'https://google.com'
             );
