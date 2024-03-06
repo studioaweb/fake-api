@@ -2415,18 +2415,16 @@ function show_live_menu($uri_segments)
 
         case "player":
             $player = array(
-                'logo' => IMAGES_URL . '0_icons/icon_brtvmax_118x64_white.png',
-                'title' => 'PBR | COLORADO 2023 | SEXTA-FEIRA',
                 'is_purchased' => true,
                 'subscribe' => false,
                 'text_button_primary' => '',
                 'url_checkout' => '',
-                'player' => 'spalla',
-                'iframe_url' => 'https://beyond.spalla.io/player/?video=018a10d2-dc8a-7b57-a187-18c48277f944&bar=1&aid=-1',
+                'player' => 'youtube',
+                'iframe_src' => 'https://www.youtube.com/embed/XnUNOaxw6bs',
                 'media' => array(
                     'thumbs' => array(
-                        'app' => IMAGES_URL . 'store_720x720/store_720x720_01.jpg',
-                        'web' => IMAGES_URL
+                        'app' => IMAGES_URL . 'highlight_medium_1920x1080/highlight_medium_1920x1080_01.jpg',
+                        'web' => IMAGES_URL . 'highlight_medium_1920x1080/highlight_medium_1920x1080_01.jpg',
                     )
                 )
             );
@@ -2435,7 +2433,8 @@ function show_live_menu($uri_segments)
 
         case "details":
             $details = array(
-                'title' => 'PBR | COLORADO 2023 | SEXTA-FEIRA',
+                'title' => 'ao vivo',
+                'logo' => IMAGES_URL . '0_icons/icon_youtube_118x64.png',
                 'full_description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus tempor egestas. Peilentesque feugiat nulla non libero pulvinar, nec consequat neque in condimentum tempor. Integer tincidunt arcu eu eros.',
                 'text_button_primary' => 'PROGRAMAÇÃO',
                 'url_button_primary' => 'https://google.com'
